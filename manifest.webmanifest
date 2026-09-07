@@ -1,0 +1,13 @@
+{
+  "name": "Моё сафари · Танзания 2026",
+  "short_name": "Моё сафари",
+  "description": "Русский дневник наблюдений для Тарангире, Серенгети и Нгоронгоро",
+  "start_url": "/arthur-tanzania-2026/",
+  "scope": "/arthur-tanzania-2026/",
+  "display": "standalone",
+  "background_color": "#f4eddf",
+  "theme_color": "#172b24",
+  "icons": [
+    { "src": "/arthur-tanzania-2026/app-icon.jpg", "sizes": "320x320", "type": "image/jpeg", "purpose": "any" }
+  ]
+}
