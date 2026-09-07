@@ -1,0 +1,232 @@
+{
+  "lion": {
+    "title": "Lion",
+    "file": "",
+    "source": "https://en.wikipedia.org/wiki/Lion"
+  },
+  "elephant": {
+    "title": "African bush elephant",
+    "file": "",
+    "source": "https://en.wikipedia.org/wiki/African_bush_elephant"
+  },
+  "buffalo": {
+    "title": "African buffalo",
+    "file": "",
+    "source": "https://en.wikipedia.org/wiki/African_buffalo"
+  },
+  "rhino": {
+    "title": "Black rhinoceros",
+    "file": "",
+    "source": "https://en.wikipedia.org/wiki/Black_rhinoceros"
+  },
+  "leopard": {
+    "title": "African leopard",
+    "file": "",
+    "source": "https://en.wikipedia.org/wiki/African_leopard"
+  },
+  "cheetah": {
+    "title": "Cheetah",
+    "file": "",
+    "source": "https://en.wikipedia.org/wiki/Cheetah"
+  },
+  "hyena": {
+    "title": "Spotted hyena",
+    "file": "",
+    "source": "https://en.wikipedia.org/wiki/Spotted_hyena"
+  },
+  "jackal": {
+    "title": "Black-backed jackal",
+    "file": "",
+    "source": "https://en.wikipedia.org/wiki/Black-backed_jackal"
+  },
+  "serval": {
+    "title": "Serval",
+    "file": "",
+    "source": "https://en.wikipedia.org/wiki/Serval"
+  },
+  "bat-eared-fox": {
+    "title": "Bat-eared fox",
+    "file": "",
+    "source": "https://en.wikipedia.org/wiki/Bat-eared_fox"
+  },
+  "mongoose": {
+    "title": "Common dwarf mongoose",
+    "file": "",
+    "source": "https://en.wikipedia.org/wiki/Common_dwarf_mongoose"
+  },
+  "giraffe": {
+    "title": "Masai giraffe",
+    "file": "",
+    "source": "https://en.wikipedia.org/wiki/Masai_giraffe"
+  },
+  "zebra": {
+    "title": "Plains zebra",
+    "file": "",
+    "source": "https://en.wikipedia.org/wiki/Plains_zebra"
+  },
+  "wildebeest": {
+    "title": "Blue wildebeest",
+    "file": "",
+    "source": "https://en.wikipedia.org/wiki/Blue_wildebeest"
+  },
+  "impala": {
+    "title": "Impala",
+    "file": "",
+    "source": "https://en.wikipedia.org/wiki/Impala"
+  },
+  "thomson-gazelle": {
+    "title": "Thomson's gazelle",
+    "file": "",
+    "source": "https://en.wikipedia.org/wiki/Thomson's_gazelle"
+  },
+  "grant-gazelle": {
+    "title": "Grant's gazelle",
+    "file": "",
+    "source": "https://en.wikipedia.org/wiki/Grant's_gazelle"
+  },
+  "eland": {
+    "title": "Common eland",
+    "file": "",
+    "source": "https://en.wikipedia.org/wiki/Common_eland"
+  },
+  "topi": {
+    "title": "Topi",
+    "file": "",
+    "source": "https://en.wikipedia.org/wiki/Topi"
+  },
+  "hartebeest": {
+    "title": "Hartebeest",
+    "file": "",
+    "source": "https://en.wikipedia.org/wiki/Hartebeest"
+  },
+  "waterbuck": {
+    "title": "Waterbuck",
+    "file": "",
+    "source": "https://en.wikipedia.org/wiki/Waterbuck"
+  },
+  "dikdik": {
+    "title": "Kirk's dik-dik",
+    "file": "",
+    "source": "https://en.wikipedia.org/wiki/Kirk's_dik-dik"
+  },
+  "reedbuck": {
+    "title": "Bohor reedbuck",
+    "file": "Bohor_reedbuck_(Redunca_redunca_wardi)_male_Serengeti.jpg",
+    "source": "https://en.wikipedia.org/wiki/Bohor_reedbuck"
+  },
+  "bushbuck": {
+    "title": "Cape bushbuck",
+    "file": "Flickr_-_Rainbirder_-_Imbabala_Bushbuck_(Tragelaphus_sylvaticus).jpg",
+    "source": "https://en.wikipedia.org/wiki/Cape_bushbuck"
+  },
+  "oryx": {
+    "title": "East African oryx",
+    "file": "Common_beisa_oryx_(Oryx_beisa_beisa)_female.jpg",
+    "source": "https://en.wikipedia.org/wiki/East_African_oryx"
+  },
+  "hippo": {
+    "title": "Hippopotamus",
+    "file": "Portrait_Hippopotamus_in_the_water.jpg",
+    "source": "https://en.wikipedia.org/wiki/Hippopotamus"
+  },
+  "warthog": {
+    "title": "Common warthog",
+    "file": "Southern_warthog_(Phacochoerus_africanus_sundevallii)_male.jpg",
+    "source": "https://en.wikipedia.org/wiki/Common_warthog"
+  },
+  "baboon": {
+    "title": "Olive baboon",
+    "file": "Olive_baboon_Ngorongoro.jpg",
+    "source": "https://en.wikipedia.org/wiki/Olive_baboon"
+  },
+  "vervet": {
+    "title": "Vervet monkey",
+    "file": "Cercopiteco_verde_(Chlorocebus_pygerythrus),_parque_nacional_del_lago_Nakuru,_Kenia,_2024-05-18,_DD_77.jpg",
+    "source": "https://en.wikipedia.org/wiki/Vervet_monkey"
+  },
+  "rock-hyrax": {
+    "title": "Rock hyrax",
+    "file": "",
+    "source": "https://en.wikipedia.org/wiki/Rock_hyrax"
+  },
+  "porcupine": {
+    "title": "Crested porcupine",
+    "file": "Hystrix_cristata_qtl1.jpg",
+    "source": "https://en.wikipedia.org/wiki/Crested_porcupine"
+  },
+  "ostrich": {
+    "title": "Common ostrich",
+    "file": "Struthio_camelus_-_Etosha_2014_(3).jpg",
+    "source": "https://en.wikipedia.org/wiki/Common_ostrich"
+  },
+  "secretary": {
+    "title": "Secretarybird",
+    "file": "Secretary_bird_Mara_for_WC.jpg",
+    "source": "https://en.wikipedia.org/wiki/Secretarybird"
+  },
+  "crowned-crane": {
+    "title": "Grey crowned crane",
+    "file": "Grey_crowned_crane_(Balearica_regulorum_gibbericeps).jpg",
+    "source": "https://en.wikipedia.org/wiki/Grey_crowned_crane"
+  },
+  "flamingo": {
+    "title": "Greater flamingo",
+    "file": "",
+    "source": "https://en.wikipedia.org/wiki/Greater_flamingo"
+  },
+  "roller": {
+    "title": "Lilac-breasted roller",
+    "file": "143_Lilac-breasted_roller_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg",
+    "source": "https://en.wikipedia.org/wiki/Lilac-breasted_roller"
+  },
+  "hornbill": {
+    "title": "Northern red-billed hornbill",
+    "file": "Hornbill,_Ethiopia_(47971177468).jpg",
+    "source": "https://en.wikipedia.org/wiki/Northern_red-billed_hornbill"
+  },
+  "marabou": {
+    "title": "Marabou stork",
+    "file": "Marabou_stork_(Leptoptilos_crumenifer).jpg",
+    "source": "https://en.wikipedia.org/wiki/Marabou_stork"
+  },
+  "vulture": {
+    "title": "White-backed vulture",
+    "file": "2012-white-backed-vulture.jpg",
+    "source": "https://en.wikipedia.org/wiki/White-backed_vulture"
+  },
+  "fish-eagle": {
+    "title": "African fish eagle",
+    "file": "African_fish_eagle,_Haliaeetus_vocifer,_at_Chobe_National_Park,_Botswana_(33516612831).jpg",
+    "source": "https://en.wikipedia.org/wiki/African_fish_eagle"
+  },
+  "weaver": {
+    "title": "Village weaver",
+    "file": "Village_weaver_(Ploceus_cucullatus_cucullatus)_male_with_leaf.jpg",
+    "source": "https://en.wikipedia.org/wiki/Village_weaver"
+  },
+  "kori-bustard": {
+    "title": "Kori Bustard, Serengeti, Tanzania",
+    "file": "Kori Bustard, Serengeti, Tanzania.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Kori_Bustard,_Serengeti,_Tanzania.jpg"
+  },
+  "guineafowl": {
+    "title": "Helmeted Guineafowl RWD",
+    "file": "Helmeted Guineafowl RWD.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Helmeted_Guineafowl_RWD.jpg"
+  },
+  "crocodile": {
+    "title": "Nile crocodile",
+    "file": "NileCrocodile.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:NileCrocodile.jpg"
+  },
+  "monitor": {
+    "title": "Nile Monitor",
+    "file": "Nile Monitor (Varanus niloticus) (16384642159).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Nile_Monitor_(Varanus_niloticus)_(16384642159).jpg"
+  },
+  "tortoise": {
+    "title": "Leopard tortoise, Serengeti",
+    "file": "Leopard tortoise, Serengeti (28009179104).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Leopard_tortoise,_Serengeti_(28009179104).jpg"
+  }
+}
