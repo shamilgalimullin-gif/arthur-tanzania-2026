@@ -1,0 +1,30 @@
+.field-tabs{width:min(620px,calc(100% - 20px));grid-template-columns:repeat(5,1fr)}
+.tips-section{scroll-margin-top:18px;margin-top:78px;margin-bottom:78px}
+.tips-heading h2 em{color:#0c5b5f}
+.before-flight{display:grid;grid-template-columns:58px minmax(180px,.75fr) minmax(0,1.4fr);gap:20px;align-items:center;background:#a8412b;color:#fff8e9;padding:25px 28px;margin-bottom:22px}
+.before-flight-mark{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:#ffc958;color:#172b24;font:600 30px var(--font-display)}
+.before-flight small{display:block;text-transform:uppercase;letter-spacing:.14em;color:#ffc958;font-size:8px;font-weight:800;margin-bottom:6px}
+.before-flight h3{font:500 25px var(--font-display);line-height:1.05;margin:0}
+.before-flight ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 24px;margin:0;padding:0;list-style:none;counter-reset:flight-tip}
+.before-flight li{position:relative;padding-left:24px;font-size:9px;line-height:1.5;color:#fff8e9d1;counter-increment:flight-tip}
+.before-flight li:before{content:counter(flight-tip);position:absolute;left:0;top:0;width:16px;height:16px;border:1px solid #ffffff55;border-radius:50%;display:grid;place-items:center;color:#ffc958;font-size:7px;font-weight:800}
+.tips-filter{display:flex;gap:7px;overflow-x:auto;padding:5px 0 13px;margin-bottom:7px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.tips-filter::-webkit-scrollbar{display:none}
+.tips-filter button{min-height:44px;border:1px solid #c8baa2;background:transparent;color:#53625c;border-radius:99px;padding:10px 15px;font-size:9px;font-weight:800;white-space:nowrap;cursor:pointer;touch-action:manipulation}
+.tips-filter button.is-active{background:#172b24;border-color:#172b24;color:#fff8e9}
+.tips-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.tip-card{min-width:0;background:#fffaf0;border:1px solid #d4c7b0;padding:25px;display:flex;flex-direction:column}
+.tip-card header{display:flex;gap:14px;align-items:center;padding-bottom:18px;border-bottom:1px solid #dfd3c0}
+.tip-card header>i{width:46px;height:46px;flex:0 0 auto;border-radius:50%;display:grid;place-items:center;background:#ffc958;color:#172b24;font:500 21px var(--font-display);font-style:normal}
+.tip-card header small{display:block;text-transform:uppercase;letter-spacing:.12em;color:#a8412b;font-size:7px;font-weight:800}
+.tip-card h3{font:500 30px var(--font-display);line-height:1;margin:5px 0 0}
+.tip-intro{font:500 17px/1.25 var(--font-display);color:#0c5b5f;margin:19px 0 15px}
+.tip-card ol{list-style:none;counter-reset:route-tip;margin:0;padding:0}
+.tip-card ol li{position:relative;counter-increment:route-tip;padding:12px 0 12px 35px;border-top:1px solid #ebe2d2;font-size:10px;line-height:1.55;color:#53625c}
+.tip-card ol li:before{content:counter(route-tip,decimal-leading-zero);position:absolute;left:0;top:12px;color:#a8412b;font-size:8px;font-weight:900;letter-spacing:.08em}
+.arthur-tip{display:grid;grid-template-columns:82px minmax(0,1fr);gap:12px;margin-top:auto;padding:15px;background:#f1df9d;color:#172b24}
+.arthur-tip b{text-transform:uppercase;letter-spacing:.12em;font-size:8px;color:#a8412b}
+.arthur-tip span{font-size:9px;line-height:1.55}
+.tips-sources{max-width:720px;margin:20px auto 0;text-align:center;font-size:8px;line-height:1.65;color:#778078}
+.tips-sources a{text-decoration:underline;text-underline-offset:2px}
+@media(max-width:700px){.field-tabs{width:calc(100% - 12px);padding:5px}.field-tabs a{min-height:58px;gap:4px}.field-tabs span{font-size:6.5px}.tips-section{margin-top:58px;margin-bottom:58px}.before-flight{grid-template-columns:50px minmax(0,1fr);padding:21px 18px;gap:15px}.before-flight-mark{width:46px;height:46px}.before-flight ul{grid-column:1/-1;grid-template-columns:minmax(0,1fr);gap:10px;padding-top:8px}.tips-filter{margin-left:-15px;margin-right:-15px;padding-left:15px;padding-right:15px}.tips-grid{grid-template-columns:minmax(0,1fr)}.tip-card{padding:21px 18px}.tip-card h3{font-size:29px}.tip-card ol li{font-size:11px}.arthur-tip{grid-template-columns:minmax(0,1fr);gap:6px}.arthur-tip span{font-size:10px}}
