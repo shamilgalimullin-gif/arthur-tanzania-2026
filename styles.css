@@ -62,10 +62,10 @@ h1,h2{font-family:var(--font-display),serif;font-weight:500;margin:0;line-height
 .explorer-passport{display:grid;grid-template-columns:280px 1fr;min-height:610px;margin:0 0 26px;background:#fffaf0;border:1px solid #cdbd9f;box-shadow:0 24px 60px #172b2416}.passport-cover{background:#0c5b5f;color:#fff8e9;padding:45px 34px;display:flex;flex-direction:column;text-align:center;align-items:center;justify-content:space-between;text-transform:uppercase;letter-spacing:.15em}.passport-cover>span{font-size:10px;line-height:1.7}.passport-cover>small{font-size:8px;line-height:1.8;color:#fff8e99b}.passport-emblem{width:145px;height:145px;border:2px solid var(--yellow);outline:1px solid #ffffff55;outline-offset:8px;border-radius:50%;display:grid;place-items:center;font:italic 75px var(--font-display);color:var(--yellow)}.passport-page{padding:46px}.passport-title{display:flex;justify-content:space-between;gap:30px;align-items:start;border-bottom:1px solid #d7cab3;padding-bottom:24px}.passport-title h3{font:500 62px/.85 var(--font-display);margin:0 0 12px}.passport-title>div>span{font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:#7a7d75}.passport-title>strong{width:85px;height:85px;border-radius:50%;border:2px dashed #a8412b;color:#a8412b;display:flex;align-items:center;justify-content:center;gap:5px;font:500 36px var(--font-display);transform:rotate(5deg)}.passport-title>strong small{font:700 7px/1.4 var(--font-sans);text-transform:uppercase;letter-spacing:.08em}.passport-instruction{font-size:10px;line-height:1.65;color:#65716b;margin:20px 0}.passport-stamps{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.passport-stamps button{min-height:145px;border:1px solid #d7cab3;background:#f5ead7;color:var(--ink);cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:transform .2s,background .2s}.passport-stamps button:hover,.passport-stamps button:focus-visible{transform:translateY(-3px);outline:2px solid #a8412b;outline-offset:1px}.passport-stamps button>span{font-size:34px;filter:grayscale(1);opacity:.55}.passport-stamps b{font:500 17px var(--font-display);margin:8px 0 5px}.passport-stamps i{font-style:normal;font-size:7px;text-transform:uppercase;letter-spacing:.12em;color:#958875}.passport-stamps button.is-stamped{background:var(--yellow);border-color:#d1a646}.passport-stamps button.is-stamped>span{filter:none;opacity:1}.passport-stamps button.is-stamped i{color:#a8412b;font-weight:800}.passport-complete{background:var(--ink);color:var(--yellow);text-align:center;padding:14px;margin-top:10px;font-size:9px;text-transform:uppercase;letter-spacing:.12em}
 
 /* Prediction and Swahili player */
-.prediction-card{display:grid;grid-template-columns:.75fr 1.25fr;background:var(--ink);color:#fff8e9;margin:0 0 26px}.prediction-intro{padding:48px}.prediction-intro h3,.swahili-player h3{font:500 clamp(44px,5vw,68px)/.9 var(--font-display);letter-spacing:-.04em;margin:0}.prediction-intro h3 em,.swahili-player h3 em{color:var(--yellow)}.prediction-intro>p:last-child{font-size:11px;line-height:1.7;color:#fff8e993;margin:25px 0 0}.prediction-questions{padding:42px 48px 32px;border-left:1px solid #ffffff20}.prediction-questions fieldset{border:0;padding:0;margin:0 0 30px}.prediction-questions legend{font:500 20px var(--font-display);margin-bottom:13px}.prediction-questions fieldset>div{display:flex;flex-wrap:wrap;gap:7px}.prediction-questions button{border:1px solid #ffffff35;background:transparent;color:#fff8e9;padding:11px 14px;cursor:pointer;font:700 9px var(--font-sans);text-transform:uppercase;letter-spacing:.08em}.prediction-questions button:hover,.prediction-questions button:focus-visible{border-color:var(--yellow);outline:none}.prediction-questions button.is-picked{background:var(--yellow);border-color:var(--yellow);color:var(--ink)}.prediction-saved{font-size:9px;color:var(--aqua);opacity:0;transition:opacity .2s;margin:0}.prediction-saved.is-visible{opacity:1}.swahili-player{display:grid;grid-template-columns:.72fr 1.28fr;gap:60px;background:var(--yellow);padding:52px;margin:0 0 90px}.swahili-player h3 em{color:#a8412b}.swahili-player>div:first-child>p:last-child{font-size:11px;line-height:1.7;color:#5d5d50}.swahili-buttons{display:grid;grid-template-columns:1fr 1fr;gap:8px}.swahili-buttons button{border:1px solid #172b2430;background:#fff8e9;color:var(--ink);min-height:78px;padding:14px 16px;cursor:pointer;display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:center;text-align:left;transition:transform .2s,background .2s}.swahili-buttons button:last-child{grid-column:1/-1}.swahili-buttons button:hover,.swahili-buttons button:focus-visible{transform:translateY(-3px);background:#fff;outline:2px solid var(--ink);outline-offset:1px}.swahili-buttons i{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#a8412b;color:#fff;font-style:normal;font-size:10px}.swahili-buttons b,.swahili-buttons small{display:block}.swahili-buttons b{font:500 23px var(--font-display)}.swahili-buttons small{font-size:8px;color:#68736d;margin-top:3px}
+.prediction-card{display:grid;grid-template-columns:.75fr 1.25fr;background:var(--ink);color:#fff8e9;margin:0 0 26px}.prediction-intro{padding:48px}.prediction-intro h3,.swahili-player h3{font:500 clamp(44px,5vw,68px)/.9 var(--font-display);letter-spacing:-.04em;margin:0}.prediction-intro h3 em,.swahili-player h3 em{color:var(--yellow)}.prediction-intro>p:last-child{font-size:11px;line-height:1.7;color:#fff8e993;margin:25px 0 0}.prediction-questions{padding:42px 48px 32px;border-left:1px solid #ffffff20}.prediction-questions fieldset{border:0;padding:0;margin:0 0 30px}.prediction-questions legend{font:500 20px var(--font-display);margin-bottom:13px}.prediction-questions fieldset>div{display:flex;flex-wrap:wrap;gap:7px}.prediction-questions button{border:1px solid #ffffff35;background:transparent;color:#fff8e9;padding:11px 14px;cursor:pointer;font:700 9px var(--font-sans);text-transform:uppercase;letter-spacing:.08em}.prediction-questions button:hover,.prediction-questions button:focus-visible{border-color:var(--yellow);outline:none}.prediction-questions button.is-picked{background:var(--yellow);border-color:var(--yellow);color:var(--ink)}.prediction-saved{font-size:9px;color:var(--aqua);opacity:0;transition:opacity .2s;margin:0}.prediction-saved.is-visible{opacity:1}.swahili-player{display:grid;grid-template-columns:.72fr 1.28fr;gap:60px;background:var(--yellow);padding:52px;margin:0 0 90px}.swahili-player h3 em{color:#a8412b}.swahili-player>div:first-child>p:last-child{font-size:11px;line-height:1.7;color:#5d5d50}.swahili-buttons{display:grid;grid-template-columns:1fr 1fr;gap:8px}.swahili-word{border:1px solid #172b2430;background:#fff8e9;color:var(--ink);min-height:78px;padding:14px 16px;display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:center}.swahili-word:last-child{grid-column:1/-1}.swahili-buttons i{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#a8412b;color:#fff;font-style:normal;font-size:9px}.swahili-buttons b,.swahili-buttons small{display:block}.swahili-buttons b{font:500 23px var(--font-display)}.swahili-buttons small{font-size:8px;color:#68736d;margin-top:3px}
 
 @media(max-width:900px){.countdown-inner{grid-template-columns:1fr 1fr;gap:30px;padding-block:34px}.countdown-date{display:none}.safari-day-story{padding:42px}.safari-moments{grid-template-columns:1fr 1fr}.explorer-passport{grid-template-columns:210px 1fr}.passport-page{padding:34px}.passport-stamps{grid-template-columns:1fr 1fr}.prediction-card,.swahili-player{grid-template-columns:1fr}.prediction-questions{border-left:0;border-top:1px solid #ffffff20}.swahili-player{gap:34px}.swahili-buttons{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.countdown-inner{grid-template-columns:1fr}.countdown-numbers{gap:7px;justify-content:space-between}.countdown-numbers span{min-width:0}.countdown-numbers b{font-size:39px}.safari-day-story{width:100%;margin-top:0;padding:36px 18px}.safari-day-head{grid-template-columns:1fr;gap:22px}.safari-moments{grid-template-columns:1fr}.safari-moments article{min-height:170px}.safari-day-note{grid-template-columns:1fr}.explorer-passport{width:100%;grid-template-columns:1fr}.passport-cover{min-height:370px}.passport-page{padding:30px 18px}.passport-title h3{font-size:52px}.passport-title>strong{width:72px;height:72px;font-size:29px}.passport-stamps{grid-template-columns:1fr 1fr}.passport-stamps button{min-height:130px}.prediction-card{width:100%}.prediction-intro,.prediction-questions{padding:36px 20px}.prediction-questions button{padding:10px}.swahili-player{width:100%;padding:38px 20px;margin-bottom:70px}.swahili-buttons{grid-template-columns:1fr}.swahili-buttons button:last-child{grid-column:1}.swahili-player h3{font-size:48px}}
+@media(max-width:560px){.countdown-inner{grid-template-columns:1fr}.countdown-numbers{gap:7px;justify-content:space-between}.countdown-numbers span{min-width:0}.countdown-numbers b{font-size:39px}.safari-day-story{width:100%;margin-top:0;padding:36px 18px}.safari-day-head{grid-template-columns:1fr;gap:22px}.safari-moments{grid-template-columns:1fr}.safari-moments article{min-height:170px}.safari-day-note{grid-template-columns:1fr}.explorer-passport{width:100%;grid-template-columns:1fr}.passport-cover{min-height:370px}.passport-page{padding:30px 18px}.passport-title h3{font-size:52px}.passport-title>strong{width:72px;height:72px;font-size:29px}.passport-stamps{grid-template-columns:1fr 1fr}.passport-stamps button{min-height:130px}.prediction-card{width:100%}.prediction-intro,.prediction-questions{padding:36px 20px}.prediction-questions button{padding:10px}.swahili-player{width:100%;padding:38px 20px;margin-bottom:70px}.swahili-buttons{grid-template-columns:1fr}.swahili-word:last-child{grid-column:1}.swahili-player h3{font-size:48px}}
 
 /* Safari field companion */
 .field-app{min-height:100vh;background:#f4eddf;color:#172b24;padding-bottom:92px}.field-hero{height:520px;position:relative;color:#fff8e9;overflow:hidden}.field-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.field-hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,#13271f85 0%,#13271f15 35%,#13271fd9 100%)}.field-topbar{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;width:min(960px,calc(100% - 34px));margin:auto;padding:24px 0;border-bottom:1px solid #ffffff40;font-size:11px;text-transform:uppercase;letter-spacing:.13em}.field-topbar a{font-weight:900;font-size:15px}.field-intro{position:absolute;z-index:2;left:max(20px,calc((100% - 960px)/2));bottom:42px}.field-intro p,.field-section-head p{font-size:10px;text-transform:uppercase;letter-spacing:.17em;font-weight:800;color:#71d3c6}.field-intro h1{font-size:clamp(74px,16vw,124px);line-height:.72}.field-intro h1 em{color:#ffc958}.field-intro>span{display:block;margin-top:28px;font-size:12px}.field-summary{width:min(960px,calc(100% - 30px));margin:-1px auto 0;display:grid;grid-template-columns:repeat(3,1fr);background:#172b24;color:#fff8e9}.field-summary>div{padding:23px;border-right:1px solid #ffffff22}.field-summary>div:last-child{border:0}.field-summary strong,.field-summary span{display:block}.field-summary strong{font:500 34px var(--font-display);color:#ffc958}.field-summary span{font-size:8px;text-transform:uppercase;letter-spacing:.12em;color:#fff8e992;margin-top:5px}.field-section{width:min(960px,calc(100% - 30px));margin:56px auto}.field-section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:24px}.field-section-head h2{font-size:clamp(45px,7vw,70px)}.field-section-head h2 em{color:#a8412b}.field-section-head>span{width:220px;font-size:11px;line-height:1.6;color:#65736d}.animal-starter-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.animal-starter{border:1px solid #d4c7b0;background:#fffaf0;color:#172b24;padding:21px;text-align:left;min-height:190px;display:flex;flex-direction:column;cursor:pointer}.animal-starter>i{font-style:normal;font-size:40px}.animal-starter span{margin-top:20px}.animal-starter b,.animal-starter small{display:block}.animal-starter b{font:500 23px var(--font-display)}.animal-starter small{font-size:9px;color:#758078;margin-top:6px}.animal-starter>strong{margin-top:auto;font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:#a8412b}.animal-starter.is-seen{background:#ffc958;border-color:#d1a646}.animal-starter.is-seen>strong{color:#172b24}.field-tabs{position:fixed;z-index:30;left:50%;bottom:max(10px,env(safe-area-inset-bottom));transform:translateX(-50%);width:min(540px,calc(100% - 20px));display:grid;grid-template-columns:repeat(4,1fr);background:#172b24;color:#fff8e9;box-shadow:0 12px 35px #10201955;border-radius:18px;padding:8px}.field-tabs a{min-height:54px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;border-radius:12px;color:#fff8e977}.field-tabs a.is-active{background:#ffc958;color:#172b24}.field-tabs i{font-style:normal;font-size:16px}.field-tabs span{font-size:8px;font-weight:800}
@@ -119,3 +119,186 @@ h1,h2{font-family:var(--font-display),serif;font-weight:500;margin:0;line-height
 /* Animal field guide: larger rectangular portraits make similar species easier to identify. */
 .animal-card{min-height:128px;grid-template-columns:104px minmax(0,1fr) auto;gap:15px;padding:14px}.animal-symbol{width:104px;height:92px;border-radius:10px}.animal-copy b{font-size:20px}.sheet-animal{grid-template-columns:220px minmax(0,1fr);gap:22px}.sheet-animal>i{width:220px;height:165px;border-radius:14px}.sheet-animal span{font-size:10px;line-height:1.55}
 @media(max-width:700px){.animal-card{min-height:122px;grid-template-columns:108px minmax(0,1fr) auto;gap:12px;padding:12px}.animal-symbol{width:108px;height:96px;border-radius:9px}.animal-copy b{font-size:20px}.sighting-sheet{padding-top:0}.sheet-close{position:sticky;float:right;top:10px;margin:10px 0 -54px}.sheet-animal{clear:both;grid-template-columns:minmax(0,1fr);gap:16px;padding:0}.sheet-animal>i{width:calc(100% + 36px);height:min(58vw,250px);margin-left:-18px;border-radius:22px 22px 0 0}.sheet-animal>div{padding-right:46px}.sheet-animal h2{font-size:35px}.sheet-animal span{font-size:11px}}
+
+/* Clearer safari photography: full panoramas, uncropped vehicles and large clue cards. */
+.park-guide-3 .park-photo-pair{grid-template-columns:1fr}
+.park-guide-3 .park-photo-pair figure:first-child img{width:100%;height:auto;min-height:0;object-fit:contain}
+.jeep-photo-story figure{overflow:visible}
+.jeep-photo-story figcaption{position:static;display:block;background:#172b24;color:#fff8e9;padding:12px 14px}
+.jeep-photo-pair figure{display:flex;flex-direction:column}
+.jeep-photo-pair figure img{width:100%;height:auto!important;aspect-ratio:3/2;object-fit:contain!important;background:#172b24}
+.photo-missions{display:grid;grid-template-columns:1fr;gap:18px}
+.photo-mission{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);min-height:430px}
+.photo-mission:nth-child(even) .photo-mission-image{order:2}
+.photo-mission-image{height:auto;min-height:430px;background:#0b312c}
+.photo-mission-image img{object-fit:contain;transform:none!important}
+.photo-mission-copy{padding:38px;display:flex;flex-direction:column;justify-content:center}
+.photo-mission-copy>p{min-height:0}
+@media(max-width:800px){.photo-mission{grid-template-columns:1fr;min-height:0}.photo-mission:nth-child(even) .photo-mission-image{order:0}.photo-mission-image{min-height:0;aspect-ratio:4/3}.photo-mission-copy{padding:28px}}
+
+/* Location-first field notes */
+.field-tabs{width:min(620px,calc(100% - 20px));grid-template-columns:repeat(5,1fr)}
+.tips-section{scroll-margin-top:18px;margin-top:78px;margin-bottom:78px}
+.tips-heading h2 em{color:#0c5b5f}
+.before-flight{display:grid;grid-template-columns:58px minmax(180px,.75fr) minmax(0,1.4fr);gap:20px;align-items:center;background:#a8412b;color:#fff8e9;padding:25px 28px;margin-bottom:22px}
+.before-flight-mark{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:#ffc958;color:#172b24;font:600 30px var(--font-display)}
+.before-flight small{display:block;text-transform:uppercase;letter-spacing:.14em;color:#ffc958;font-size:8px;font-weight:800;margin-bottom:6px}
+.before-flight h3{font:500 25px var(--font-display);line-height:1.05;margin:0}
+.before-flight ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 24px;margin:0;padding:0;list-style:none;counter-reset:flight-tip}
+.before-flight li{position:relative;padding-left:24px;font-size:9px;line-height:1.5;color:#fff8e9d1;counter-increment:flight-tip}
+.before-flight li::before{content:counter(flight-tip);position:absolute;left:0;top:0;width:16px;height:16px;border:1px solid #ffffff55;border-radius:50%;display:grid;place-items:center;color:#ffc958;font-size:7px;font-weight:800}
+.tips-filter{display:flex;gap:7px;overflow-x:auto;padding:5px 0 13px;margin-bottom:7px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.tips-filter::-webkit-scrollbar{display:none}
+.tips-filter button{min-height:44px;border:1px solid #c8baa2;background:transparent;color:#53625c;border-radius:99px;padding:10px 15px;font-size:9px;font-weight:800;white-space:nowrap;cursor:pointer;touch-action:manipulation}
+.tips-filter button.is-active{background:#172b24;border-color:#172b24;color:#fff8e9}
+.tips-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.tip-card{min-width:0;background:#fffaf0;border:1px solid #d4c7b0;padding:25px;display:flex;flex-direction:column}
+.tip-card header{display:flex;gap:14px;align-items:center;padding-bottom:18px;border-bottom:1px solid #dfd3c0}
+.tip-card header>i{width:46px;height:46px;flex:0 0 auto;border-radius:50%;display:grid;place-items:center;background:#ffc958;color:#172b24;font:500 21px var(--font-display);font-style:normal}
+.tip-card header small{display:block;text-transform:uppercase;letter-spacing:.12em;color:#a8412b;font-size:7px;font-weight:800}
+.tip-card h3{font:500 30px var(--font-display);line-height:1;margin:5px 0 0}
+.tip-intro{font:500 17px/1.25 var(--font-display);color:#0c5b5f;margin:19px 0 15px}
+.tip-card ol{list-style:none;counter-reset:route-tip;margin:0;padding:0}
+.tip-card ol li{position:relative;counter-increment:route-tip;padding:12px 0 12px 35px;border-top:1px solid #ebe2d2;font-size:10px;line-height:1.55;color:#53625c}
+.tip-card ol li::before{content:counter(route-tip,decimal-leading-zero);position:absolute;left:0;top:12px;color:#a8412b;font-size:8px;font-weight:900;letter-spacing:.08em}
+.arthur-tip{display:grid;grid-template-columns:82px minmax(0,1fr);gap:12px;margin-top:auto;padding:15px;background:#f1df9d;color:#172b24}
+.arthur-tip b{text-transform:uppercase;letter-spacing:.12em;font-size:8px;color:#a8412b}
+.arthur-tip span{font-size:9px;line-height:1.55}
+.tips-sources{max-width:720px;margin:20px auto 0;text-align:center;font-size:8px;line-height:1.65;color:#778078}
+.tips-sources a{text-decoration:underline;text-underline-offset:2px}
+@media(max-width:700px){.field-tabs{width:calc(100% - 12px);padding:5px}.field-tabs a{min-height:58px;gap:4px}.field-tabs span{font-size:6.5px}.tips-section{margin-top:58px;margin-bottom:58px}.before-flight{grid-template-columns:50px minmax(0,1fr);padding:21px 18px;gap:15px}.before-flight-mark{width:46px;height:46px}.before-flight ul{grid-column:1/-1;grid-template-columns:minmax(0,1fr);gap:10px;padding-top:8px}.tips-filter{margin-left:-15px;margin-right:-15px;padding-left:15px;padding-right:15px}.tips-grid{grid-template-columns:minmax(0,1fr)}.tip-card{padding:21px 18px}.tip-card h3{font-size:29px}.tip-card ol li{font-size:11px}.arthur-tip{grid-template-columns:minmax(0,1fr);gap:6px}.arthur-tip span{font-size:10px}}
+
+/* Child-friendly reading scale: body copy is never reduced to caption-sized type. */
+body{font-size:18px}
+.nav{font-size:15px}.dates{font-size:14px}.eyebrow{font-size:14px}.intro{font-size:19px}.cta{font-size:16px}.photo-card span{font-size:15px}.stamp{font-size:13px}
+.section-note,.country-lead,.island-intro>p,.parks-intro>p:last-child,.safari-heading>p:last-child,.prepare-head>p,.media-head>p:last-child,.finale>p{font-size:17px;line-height:1.75}
+.quiz-kicker{font-size:14px}.quiz-options button{font-size:17px}.quiz-options button span{font-size:13px}.quiz-result{font-size:15px}.quiz-scroll{font-size:12px}
+.swahili p{font-size:16px}.country-label{font-size:13px}.country-facts span{font-size:14px}.arthur-note>span,.kid-note span{font-size:13px}.arthur-note>p{font-size:26px}
+.map-controls button{font-size:14px}.distance-strip span{font-size:12px}.distance-strip small{font-size:14px}.trip-marker,.trip-marker-label{font-size:13px}.route-notes>article>span{font-size:13px}.route-notes p{font-size:16px}.stop-list>li>span{font-size:13px}.stop-list small{font-size:15px}.leaflet-popup-content{font-size:15px}
+.island-stat span{font-size:14px}.island-carousel-count,.card-label,.mini-fact b{font-size:13px}.island-grid-three .island-card>p:not(.card-label),.island-card>p:last-child{font-size:17px}.island-card .mini-fact p{font-size:18px}.lion-king-note>div>span,.lion-king-note>div>small{font-size:14px}.lion-king-note>div>p{font-size:27px}
+.park-date,.park-watch>b{font-size:13px}.park-narrative .park-lead{font-size:20px}.park-detail{font-size:17px}.park-watch li{font-size:16px;line-height:1.65}.park-stats span{font-size:12px}.park-stats b{font-size:18px}.park-mission{font-size:15px}.arthur-fact span,.jeep-fact span,.return-fact span{font-size:12px}.arthur-fact p,.jeep-fact p,.return-trip .return-fact p{font-size:19px}.park-photo-story figcaption,.jeep-photo-story figcaption{font-size:13px}
+.jeep-copy>p:not(.eyebrow){font-size:17px}.jeep-copy li{font-size:16px;line-height:1.55}.giraffe-gallery-simple figcaption{font-size:13px}.giraffe-copy li>span{font-size:13px}.giraffe-copy li p{font-size:16px;line-height:1.7}.giraffe-facts span{font-size:12px}.giraffe-copy>small{font-size:13px}
+.return-trip>div>p:last-child{font-size:17px}.return-trip li span{font-size:13px}.return-trip li b{font-size:21px}.return-trip li small{font-size:15px}.return-map-card>div:last-child span{font-size:14px}
+.countdown-numbers span,.countdown-date span{font-size:12px}.mission-progress span{font-size:13px}.mission-item small{font-size:15px;line-height:1.6}.mission-item>i{font-size:12px}.photo-missions-head>p:last-child{font-size:16px}.photo-mission-image span{font-size:12px}.photo-mission-copy>p{font-size:16px}.photo-mission-copy button{font-size:14px}.photo-answer{font-size:15px}
+.prediction-intro>p:last-child,.swahili-player>div:first-child>p:last-child{font-size:16px}.prediction-questions button{font-size:14px}.prediction-saved{font-size:13px}.swahili-buttons small{font-size:14px}.swahili-buttons i{font-size:12px}
+.book-card small,.film-card small{font-size:12px}.book-card>b{font-size:14px}.book-card p,.film-card p{font-size:16px;line-height:1.7}.book-card i,.film-card i{font-size:13px}.viewing-note b{font-size:13px}.viewing-note p{font-size:15px}.photo-credits{font-size:13px}.footer-inner p,.footer-inner a{font-size:14px}
+
+/* The pocket safari guide uses the same readable minimums. */
+.field-topbar{font-size:13px}.field-topbar button{font-size:12px}.install-tip span{font-size:14px}.field-intro p,.field-section-head p,.packing-head p,.results-card>div:first-child>p{font-size:13px}.field-intro>span{font-size:15px}.field-summary span{font-size:12px}.field-section-head>span{font-size:15px}.round-progress small{font-size:11px}.big-five-row button>span{font-size:17px}
+.filter-scroll button,.view-switch button,.tips-filter button{font-size:13px}.animal-copy small{font-size:11px}.animal-copy b{font-size:21px}.animal-copy i{font-size:12px}.seen-mark>small{font-size:11px}.empty-state{font-size:15px}.packing-head>div:first-child>span{font-size:15px}.packing-score>span{font-size:12px}.packing-group header span{font-size:12px}.packing-group label>span{font-size:15px}.packing-note b{font-size:12px}.packing-note span{font-size:15px}.results-card>div:first-child>span{font-size:14px}.park-results span{font-size:15px}.result-actions button{font-size:13px}.back-to-guide{font-size:14px}.animal-photo-credit{font-size:12px}
+.sheet-animal small,.sheet-fields>label>span{font-size:12px}.sheet-animal span{font-size:14px}.sheet-actions button{font-size:13px}.field-guide-link{font-size:13px}.field-tabs span{font-size:11px}.field-tabs a{min-height:64px}.before-flight small{font-size:12px}.before-flight li{font-size:14px}.before-flight li::before{font-size:10px}.tip-card header small{font-size:11px}.tip-card ol li{font-size:15px}.tip-card ol li::before{font-size:11px}.arthur-tip b{font-size:11px}.arthur-tip span{font-size:14px}.tips-sources{font-size:12px}
+
+@media(max-width:560px){.dates{font-size:13px}.intro{font-size:18px}.map-controls button{font-size:13px}.trip-marker-label{font-size:12px}.country-lead{font-size:17px}.arthur-note>p{font-size:24px}.park-narrative .park-lead{font-size:19px}.park-photo-story figcaption,.jeep-photo-story figcaption,.giraffe-gallery-simple figcaption{font-size:12px}.lion-king-note>div>p{font-size:24px}.field-intro>span{font-size:14px}.field-tabs{width:calc(100% - 12px);padding:6px}.field-tabs a{min-height:66px}.field-tabs span{font-size:10px;letter-spacing:-.01em}.tip-card ol li{font-size:15px}.arthur-tip span{font-size:14px}}
+
+/* Animal field-guide details */
+.animal-chance{display:inline-flex;align-items:center;width:max-content;margin-top:8px;padding:4px 8px;border-radius:99px;background:#e8ddca;color:#53625c;font-size:11px;font-style:normal;font-weight:800;line-height:1;text-transform:uppercase;letter-spacing:.05em}
+.animal-chance[data-chance="Часто"]{background:#d8ead6;color:#235c38}
+.animal-chance[data-chance="Возможно"]{background:#f2df9b;color:#6e4c00}
+.animal-chance[data-chance="Редкая удача"]{background:#edd5cf;color:#8b3828}
+.animal-detail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:24px}
+.animal-detail{min-width:0;padding:15px 16px;background:#fff;border:1px solid #d7cbb8}
+.animal-detail b,.animal-detail span{display:block}
+.animal-detail b{margin-bottom:7px;color:#a8412b;font-size:11px;text-transform:uppercase;letter-spacing:.1em}
+.animal-detail span{color:#43514b;font-size:15px;line-height:1.5}
+.animal-detail--arthur{grid-column:1/-1;background:#f1df9d;border-color:#e1c96c}
+.animal-detail--arthur b{color:#172b24}
+.sheet-animal .animal-chance{margin-top:10px}
+@media(max-width:700px){.animal-card{min-height:132px}.animal-chance{font-size:10px}.animal-detail-grid{grid-template-columns:minmax(0,1fr);margin-top:20px}.animal-detail--arthur{grid-column:1}.animal-detail{padding:14px}.animal-detail span{font-size:15px}.sheet-actions{position:static}}
+/* Light mobile comfort pass: keep the desktop story intact, but make it feel native on a phone. */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body,main{max-width:100%;overflow-x:hidden}
+button,a{-webkit-tap-highlight-color:transparent}
+
+@media(max-width:600px), (hover:none) and (pointer:coarse) and (max-device-width:600px){
+  .shell{width:calc(100% - 28px)}
+  .nav{height:auto;min-height:72px;gap:12px;padding-block:max(10px,env(safe-area-inset-top)) 10px}
+  .brand{flex:0 0 auto;font-size:17px}.dates{margin-left:auto;white-space:nowrap;padding:8px 10px;letter-spacing:.04em}
+  .quiz{min-height:100svh;padding:calc(28px + env(safe-area-inset-top)) 14px calc(50px + env(safe-area-inset-bottom))}
+  .quiz-reveal{font-size:clamp(40px,12vw,52px);line-height:.92;padding:12px 2px}
+  .quiz-surprise h1,.quiz h1{font-size:clamp(52px,17vw,68px);line-height:.82}
+  .quiz-question{font-size:22px;line-height:1.25;margin:30px 0 18px}
+  .quiz-options button{min-height:76px;font-size:16px;line-height:1.25;touch-action:manipulation}
+  .quiz-result{height:auto;min-height:64px;margin-top:18px;padding-inline:4px;line-height:1.4}
+  .quiz-scroll{bottom:max(14px,env(safe-area-inset-bottom));white-space:nowrap}
+
+  .country-grid{min-height:0;gap:24px;padding-block:44px}.country-copy h2{font-size:clamp(50px,16vw,62px);line-height:.92}
+  .swahili{align-items:flex-start}.swahili>span{flex:0 0 88px;width:88px;height:88px;font-size:22px}.swahili p{margin-top:3px}
+  .country-visual{height:320px}.country-label{right:0;bottom:0;max-width:78%;padding:12px 14px;font-size:11px}
+  .country-facts article{padding:22px 18px}.lion-king-note{gap:20px}
+
+  .route-section{padding:62px 0}.section-head{margin-bottom:30px}.section-head h2{font-size:clamp(42px,13vw,54px)}
+  .real-map{height:430px}.map-controls{left:10px;right:10px;top:10px;display:grid;grid-template-columns:1fr 1fr}.map-controls button{min-height:44px;padding:9px 7px}
+  .distance-strip>div{padding:17px 18px}.route-notes article{padding:21px 18px}
+
+  .island-section{padding:68px 0}.island-intro{margin-bottom:42px}.island-title h2{font-size:clamp(52px,17vw,68px)}
+  .island-grid-three .island-image{height:auto}.island-carousel-frame{aspect-ratio:4/3}.island-card h3{font-size:34px}
+  .island-carousel-controls{height:54px}.island-carousel-controls>button{min-width:54px}
+
+  .safari-hero{height:570px}.safari-heading{padding-top:88px}.safari-heading h2{font-size:clamp(50px,15vw,62px);line-height:.9}
+  .safari-heading>p:last-child{margin-top:24px}.field-guide-link{min-height:44px;display:inline-flex;align-items:center}
+  .parks-intro{padding-top:62px}.parks-intro h2{font-size:clamp(44px,13vw,54px)}
+  .park-copy{padding:34px 20px;gap:22px}.park-copy h3{font-size:clamp(42px,13vw,54px);overflow-wrap:anywhere}
+  .park-copy h4{font-size:21px}.park-photo-pair,.jeep-photo-pair{grid-template-columns:1fr}.park-photo-story figcaption,.jeep-photo-story figcaption{font-size:12px;line-height:1.4}
+  .jeep-copy,.giraffe-copy{padding:38px 20px}.jeep-copy h2,.giraffe-copy h2{font-size:clamp(44px,13vw,54px)}
+  .giraffe-gallery-simple{grid-template-columns:1fr;grid-template-rows:auto;min-height:0}.giraffe-gallery-simple .giraffe-main,.giraffe-gallery-simple .giraffe-side{grid-column:1;grid-row:auto}
+  .giraffe-badge{left:18px;bottom:18px;width:94px;height:94px}
+  .return-trip{margin-bottom:58px;padding:36px 20px}.return-trip h2{font-size:clamp(40px,12vw,50px);line-height:.95}.return-map-card>div:last-child span{padding:12px 14px}
+
+  .prepare-section{padding:68px 0}.prepare-head{margin-bottom:40px}.prepare-head h2{font-size:clamp(44px,13vw,54px)}
+  .mission-board{padding:32px 16px}.mission-board-head h3{font-size:clamp(42px,13vw,54px)}
+  .mission-item{min-height:76px}.mission-icon{width:42px;height:42px}.mission-item b{font-size:21px}
+  .book-card,.film-card{min-height:0;padding:24px 20px}.book-card h3,.film-card h3{font-size:29px}
+  .prediction-intro,.prediction-questions,.swahili-player{padding-left:18px;padding-right:18px}
+  .prediction-questions button,.swahili-word,.photo-mission-copy button{min-height:48px}
+  .finale{gap:24px;padding:34px 21px}.finale h2{font-size:clamp(42px,13vw,50px)}
+  .footer-inner{height:auto;min-height:132px;padding-block:28px}.photo-credits{padding-bottom:max(8px,env(safe-area-inset-bottom))}
+}
+
+@media(max-width:390px){
+  .shell{width:calc(100% - 24px)}
+  .brand{font-size:15px}.dates{font-size:11px;padding:7px 8px}
+  .quiz-options{grid-template-columns:1fr 1fr}
+  .country-visual{height:285px}.real-map{height:400px}
+  .countdown-numbers b{font-size:35px}.countdown-numbers i{font-size:25px}
+}
+
+/* Tablet and phone layout: a true single-column reading experience. */
+@media(max-width:900px), (hover:none) and (pointer:coarse) and (max-device-width:900px){
+  .country .nav{height:auto;min-height:0;flex-wrap:wrap;gap:12px;padding:14px 0}
+  .country .nav-links{order:3;display:flex;width:100%;gap:8px;overflow-x:auto;padding:10px 0 2px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .country .nav-links::-webkit-scrollbar{display:none}
+  .country .nav-links a{flex:0 0 auto;min-height:44px;display:flex;align-items:center;border:1px solid #ffffff30;border-radius:99px;padding:9px 13px;color:#fff8e9;font-size:14px;white-space:nowrap}
+  .country-grid{min-height:0}.country-copy,.country-visual{min-width:0}
+  .section-head,.island-intro,.parks-intro,.prepare-head,.media-head,.photo-missions-head,.safari-day-head{display:grid;grid-template-columns:minmax(0,1fr);gap:20px;align-items:start}
+  .section-note,.island-intro>p,.parks-intro>p:last-child,.prepare-head>p,.media-head>p:last-child,.photo-missions-head>p:last-child,.safari-day-head>p{width:auto;max-width:none;margin:0}
+  .island-grid-three,.book-grid,.film-grid,.photo-missions,.tips-grid{grid-template-columns:minmax(0,1fr)}
+  .park-guide,.jeep-section,.giraffe-stay,.return-trip,.mission-board,.safari-day-story,.explorer-passport,.prediction-card,.swahili-player{max-width:100%;min-width:0}
+  .park-copy,.jeep-copy,.giraffe-copy,.return-trip{grid-template-columns:minmax(0,1fr)}
+  .park-photo-pair,.jeep-photo-pair,.giraffe-gallery-simple{grid-template-columns:minmax(0,1fr)}
+  .giraffe-gallery-simple .giraffe-main,.giraffe-gallery-simple .giraffe-side{grid-column:1;grid-row:auto}
+  .photo-mission{grid-template-columns:minmax(0,1fr);min-height:0}.photo-mission:nth-child(even) .photo-mission-image{order:0}
+  .photo-mission-image{min-height:0;aspect-ratio:4/3}.photo-mission-copy{padding:28px}
+  .countdown-inner{grid-template-columns:minmax(0,1fr);gap:24px}.countdown-numbers{width:100%;justify-content:space-between}
+}
+
+@media(max-width:600px), (hover:none) and (pointer:coarse) and (max-device-width:600px){
+  .country .nav .dates{display:none}
+  .country .nav-links{width:calc(100% + 28px);margin-inline:-14px;padding-inline:14px}
+  .country-grid{padding-top:36px}.country-visual{margin-top:4px}
+  .country-facts{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .country-facts::-webkit-scrollbar{display:none}
+  .country-facts article,.country-facts article:nth-child(2){flex:0 0 82%;scroll-snap-align:start;border-right:1px solid #ffffff20;border-bottom:0}
+  .route-notes{display:block}.route-notes article{border-right:0!important}
+  .park-guide,.jeep-section,.giraffe-stay,.return-trip,.mission-board,.safari-day-story,.explorer-passport,.prediction-card,.swahili-player{border-left:0;border-right:0}
+  .park-photo-story,.jeep-photo-story{padding:5px}.park-photo-pair,.jeep-photo-pair{gap:5px;margin-top:5px}
+  .park-stats{grid-template-columns:1fr 1fr}.park-stats span{border-right:1px solid #d8ccb8}.park-stats span:nth-child(2){border-right:0}.park-stats span:last-child{grid-column:1/-1}
+  .safari-reality-note{margin:0 0 32px;padding:22px 18px}
+  .before-flight{margin-inline:0}.tips-filter{scroll-snap-type:x proximity}.tips-filter button{scroll-snap-align:start}
+  .swahili-buttons,.sheet-fields,.packing-groups,.results-card{grid-template-columns:minmax(0,1fr)}
+  .swahili-word:last-child,.note-field,.photo-field,.result-actions{grid-column:1}
+}
+
+@media(hover:none) and (pointer:coarse){
+  a,button,label{touch-action:manipulation}
+  .island-card:hover img,.book-card:hover,.film-card:hover,.photo-mission:hover img{transform:none}
+}

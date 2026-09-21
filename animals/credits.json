@@ -228,5 +228,257 @@
     "title": "Leopard tortoise, Serengeti",
     "file": "Leopard tortoise, Serengeti (28009179104).jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Leopard_tortoise,_Serengeti_(28009179104).jpg"
+  },
+  "greater-kudu": {
+    "title": "Greater kudu",
+    "file": "Tragelaphus strepsiceros (female).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Tragelaphus_strepsiceros_(female).jpg",
+    "artist": "Hans Hillewaert",
+    "license": "CC BY-SA 4.0"
+  },
+  "lesser-kudu": {
+    "title": "Lesser kudu",
+    "file": "Lesser Kudu Male (Tragelaphus imberbis).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Lesser_Kudu_Male_(Tragelaphus_imberbis).jpg",
+    "artist": "Lip Kee Yap",
+    "license": "CC BY-SA 2.0"
+  },
+  "gerenuk": {
+    "title": "Gerenuk",
+    "file": "Litocranius walleri walleri 388183522.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Litocranius_walleri_walleri_388183522.jpg",
+    "artist": "ecovore",
+    "license": "CC BY 4.0"
+  },
+  "wild-dog": {
+    "title": "African wild dog",
+    "file": "Lycaon pictus (Temminck, 1820).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Lycaon_pictus_(Temminck,_1820).jpg",
+    "artist": "Michael Gäbler",
+    "license": "CC BY 3.0"
+  },
+  "golden-wolf": {
+    "title": "African golden wolf",
+    "file": "Canis anthus lupaster at Abu Rawash By Hatem Moushir.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Canis_anthus_lupaster_at_Abu_Rawash_By_Hatem_Moushir.jpg",
+    "artist": "Hatem Moushir",
+    "license": "CC BY-SA 4.0"
+  },
+  "caracal": {
+    "title": "Caracal",
+    "file": "Caracal hunting in the serengeti.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Caracal_hunting_in_the_serengeti.jpg",
+    "artist": "Nick and Melissa Baker / Inkbacker",
+    "license": "CC BY 2.5"
+  },
+  "aardwolf": {
+    "title": "Aardwolf",
+    "file": "Proteles cristata - Aardwolf - NHMI.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Proteles_cristata_-_Aardwolf_-_NHMI.jpg",
+    "artist": "Illustratedjc",
+    "license": "CC BY-SA 4.0"
+  },
+  "honey-badger": {
+    "title": "Honey badger",
+    "file": "Honey Badger (Mellivora capensis) (17425848662).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Honey_Badger_(Mellivora_capensis)_(17425848662).jpg",
+    "artist": "Bernard DUPONT from FRANCE",
+    "license": "CC BY-SA 2.0"
+  },
+  "pangolin": {
+    "title": "Ground pangolin",
+    "file": "Manis temminckii (Blitz).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Manis_temminckii_(Blitz).jpg",
+    "artist": "Meyers Blitz Lexikon",
+    "license": "Public domain"
+  },
+  "aardvark": {
+    "title": "Aardvark",
+    "file": "Orycteropus afer stuffed.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Orycteropus_afer_stuffed.jpg",
+    "artist": "Masur",
+    "license": "CC BY-SA 3.0"
+  },
+  "genet": {
+    "title": "Common genet",
+    "file": "Genetta genetta felina.JPG",
+    "source": "https://commons.wikimedia.org/wiki/File:Genetta_genetta_felina.JPG",
+    "artist": "Guérin Nicolas ( messages )",
+    "license": "CC BY-SA 3.0"
+  },
+  "civet": {
+    "title": "African civet",
+    "file": "African Civet (Civettictis civetta).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:African_Civet_(Civettictis_civetta).jpg",
+    "artist": "Cliff",
+    "license": "CC BY 2.0"
+  },
+  "bushbaby": {
+    "title": "Senegal bushbaby",
+    "file": "Galago senegalensis.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Galago_senegalensis.jpg",
+    "artist": "OpenCage",
+    "license": "CC BY-SA 2.5"
+  },
+  "african-hare": {
+    "title": "African savanna hare",
+    "file": "Lepus victoriae.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Lepus_victoriae.jpg",
+    "artist": "williamstephens56",
+    "license": "CC BY 4.0"
+  },
+  "springhare": {
+    "title": "East African springhare",
+    "file": "Pedetes surdaster, Amboseli NP, Kenya.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Pedetes_surdaster,_Amboseli_NP,_Kenya.jpg",
+    "artist": "Laika ac from USA",
+    "license": "CC BY-SA 2.0"
+  },
+  "striped-hyena": {
+    "title": "Striped hyena",
+    "file": "Striped hyena (Hyaena hyaena) rushikesh dop.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Striped_hyena_(Hyaena_hyaena)_rushikesh_dop.jpg",
+    "artist": "Rushikesh Deshmukh DOP",
+    "license": "CC BY-SA 4.0"
+  },
+  "common-duiker": {
+    "title": "Common duiker",
+    "file": "Common Duiker (Sylvicapra grimmia) (6600952953).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Common_Duiker_(Sylvicapra_grimmia)_(6600952953).jpg",
+    "artist": "Bernard DUPONT from FRANCE",
+    "license": "CC BY-SA 2.0"
+  },
+  "klipspringer": {
+    "title": "Klipspringer",
+    "file": "Klipspringer (Oreotragus oreotragus) head.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Klipspringer_(Oreotragus_oreotragus)_head.jpg",
+    "artist": "MONGO",
+    "license": "CC BY-SA 3.0"
+  },
+  "steenbok": {
+    "title": "Steenbok",
+    "file": "Raphicerus campestris.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Raphicerus_campestris.jpg",
+    "artist": "Hans Hillewaert",
+    "license": "CC BY-SA 4.0"
+  },
+  "bushpig": {
+    "title": "Bushpig",
+    "file": "Bushpig, Potamochoerus larvatus - having a sunset drink (6041783506).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Bushpig,_Potamochoerus_larvatus_-_having_a_sunset_drink_(6041783506).jpg",
+    "artist": "Derek Keats from Johannesburg, South Africa",
+    "license": "CC BY 2.0"
+  },
+  "ground-hornbill": {
+    "title": "Southern ground hornbill",
+    "file": "Bucorvus leadbeateri (Mfuwe).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Bucorvus_leadbeateri_(Mfuwe).jpg",
+    "artist": "Hans Hillewaert",
+    "license": "CC BY-SA 3.0"
+  },
+  "bateleur": {
+    "title": "Bateleur",
+    "file": "Bateleur (Terathopius ecaudatus) - Flickr - Lip Kee.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Bateleur_(Terathopius_ecaudatus)_-_Flickr_-_Lip_Kee.jpg",
+    "artist": "Lip Kee from Singapore, Republic of Singapore",
+    "license": "CC BY-SA 2.0"
+  },
+  "martial-eagle": {
+    "title": "Martial eagle",
+    "file": "Martial Eagle (Polemaetus bellicosus) juvenile (17142198408).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Martial_Eagle_(Polemaetus_bellicosus)_juvenile_(17142198408).jpg",
+    "artist": "Bernard DUPONT from FRANCE",
+    "license": "CC BY-SA 2.0"
+  },
+  "tawny-eagle": {
+    "title": "Tawny eagle",
+    "file": "Tawny Eagle, Aquila rapax that we believe had caught a red billed buffalo weaver (Kruger National Park) (20181968861).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Tawny_Eagle,_Aquila_rapax_that_we_believe_had_caught_a_red_billed_buffalo_weaver_(Kruger_National_Park)_(20181968861).jpg",
+    "artist": "Derek Keats from Johannesburg, South Africa",
+    "license": "CC BY 2.0"
+  },
+  "white-backed-vulture": {
+    "title": "White-backed vulture",
+    "file": "Weißrückengeier Gyps africanus HP L2043.JPG",
+    "source": "https://commons.wikimedia.org/wiki/File:Wei%C3%9Fr%C3%BCckengeier_Gyps_africanus_HP_L2043.JPG",
+    "artist": "Alchemist-hp ( talk )",
+    "license": "FAL"
+  },
+  "lappet-faced-vulture": {
+    "title": "Lappet-faced vulture",
+    "file": "Lappet-faced Vulture (Torgos tracheliotos), Kgalagadi, South Africa (6526355327).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Lappet-faced_Vulture_(Torgos_tracheliotos),_Kgalagadi,_South_Africa_(6526355327).jpg",
+    "artist": "Bernard DUPONT from FRANCE",
+    "license": "CC BY-SA 2.0"
+  },
+  "yellow-billed-stork": {
+    "title": "Yellow-billed stork",
+    "file": "Mycteria ibis - Réserve africaine de Sigean 01.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Mycteria_ibis_-_R%C3%A9serve_africaine_de_Sigean_01.jpg",
+    "artist": "H. Zell",
+    "license": "CC BY-SA 3.0"
+  },
+  "saddle-billed-stork": {
+    "title": "Saddle-billed stork",
+    "file": "Ephippiorhynchus senegalensis - Palmitos Park.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Ephippiorhynchus_senegalensis_-_Palmitos_Park.jpg",
+    "artist": "H. Zell",
+    "license": "CC BY-SA 3.0"
+  },
+  "fischer-lovebird": {
+    "title": "Fischer's lovebird",
+    "file": "Fischer's Lovebird (Agapornis fischeri) (24041406070).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Fischer%27s_Lovebird_(Agapornis_fischeri)_(24041406070).jpg",
+    "artist": "Lip Kee from Singapore, Republic of Singapore",
+    "license": "CC BY-SA 2.0"
+  },
+  "superb-starling": {
+    "title": "Superb starling",
+    "file": "Superb Starling Lamprotornis superbus 2966 cropped Nevit.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Superb_Starling_Lamprotornis_superbus_2966_cropped_Nevit.jpg",
+    "artist": "Nevit Dilmen ( talk )",
+    "license": "CC BY-SA 3.0"
+  },
+  "red-yellow-barbet": {
+    "title": "Red-and-yellow barbet",
+    "file": "Red-and-yellow Barbet (Trachyphonus erythrocephalus).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Red-and-yellow_Barbet_(Trachyphonus_erythrocephalus).jpg",
+    "artist": "Lip Kee Yap",
+    "license": "CC BY-SA 2.0"
+  },
+  "go-away-bird": {
+    "title": "White-bellied go-away-bird",
+    "file": "White-bellied Go-away-bird (Corythaixoides leucogaster).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:White-bellied_Go-away-bird_(Corythaixoides_leucogaster).jpg",
+    "artist": "Lip Kee",
+    "license": "CC BY-SA 2.0"
+  },
+  "rock-python": {
+    "title": "African rock python",
+    "file": "Python sebae head1'.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Python_sebae_head1%27.jpg",
+    "artist": "Tigerpython",
+    "license": "CC BY-SA 3.0"
+  },
+  "agama": {
+    "title": "Mwanza flat-headed rock agama",
+    "file": "Agama mwanzae Serengeti 3.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Agama_mwanzae_Serengeti_3.jpg",
+    "artist": "Leyo",
+    "license": "CC BY-SA 2.5 ch"
+  },
+  "flap-necked-chameleon": {
+    "title": "Flap-necked chameleon",
+    "file": "Flap-necked chameleon chamaeleo dilepis.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Flap-necked_chameleon_chamaeleo_dilepis.jpg",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 3.0"
+  },
+  "puff-adder": {
+    "title": "Puff adder",
+    "file": "Bitis arietans.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Bitis_arietans.jpg",
+    "artist": "Julius Rückert",
+    "license": "CC BY-SA 3.0"
   }
 }
