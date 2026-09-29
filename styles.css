@@ -203,7 +203,8 @@ body{font-size:18px}
 .animal-detail--arthur{grid-column:1/-1;background:#f1df9d;border-color:#e1c96c}
 .animal-detail--arthur b{color:#172b24}
 .sheet-animal .animal-chance{margin-top:10px}
-@media(max-width:700px){.animal-card{min-height:132px}.animal-chance{font-size:10px}.animal-detail-grid{grid-template-columns:minmax(0,1fr);margin-top:20px}.animal-detail--arthur{grid-column:1}.animal-detail{padding:14px}.animal-detail span{font-size:15px}.sheet-actions{position:static}}
+.animal-english{display:block;margin:3px 0 2px;color:#0c5b5f;font-size:13px;font-weight:800;line-height:1.3;overflow-wrap:anywhere}.animal-english em{color:#6f7772;font-style:normal;font-weight:500}.sheet-english{display:block;margin:0 0 4px;color:#0c5b5f;font-size:16px;line-height:1.35}.sheet-english em{color:#6b746f;font-style:normal;font-weight:500}.seen-mark{min-width:112px}.seen-mark>small{line-height:1.45}.count-control--young{background:#fff9e8}.count-hint{grid-column:1/-1;margin:0;padding:10px 12px;background:#f5e2dc;color:#8b3828;font-size:13px;line-height:1.4}.save-sighting:disabled{cursor:not-allowed;opacity:.45}
+@media(max-width:700px){.animal-card{position:relative;min-height:148px;grid-template-columns:108px minmax(0,1fr);align-items:start}.animal-symbol{grid-row:1 / span 2}.animal-copy{padding-right:30px}.animal-english{font-size:12px}.add-mark{position:absolute;right:12px;top:12px}.seen-mark{grid-column:2;display:flex;align-items:center;gap:8px;min-width:0;text-align:left}.seen-mark>b{width:28px;height:28px;margin:0;flex:0 0 auto}.seen-mark>small{margin:0;max-width:none}.sheet-english{font-size:15px}.animal-chance{font-size:10px}.animal-detail-grid{grid-template-columns:minmax(0,1fr);margin-top:20px}.animal-detail--arthur{grid-column:1}.animal-detail{padding:14px}.animal-detail span{font-size:15px}.sheet-actions{position:static}}
 /* Light mobile comfort pass: keep the desktop story intact, but make it feel native on a phone. */
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body,main{max-width:100%;overflow-x:hidden}
@@ -257,48 +258,3 @@ button,a{-webkit-tap-highlight-color:transparent}
 @media(max-width:390px){
   .shell{width:calc(100% - 24px)}
   .brand{font-size:15px}.dates{font-size:11px;padding:7px 8px}
-  .quiz-options{grid-template-columns:1fr 1fr}
-  .country-visual{height:285px}.real-map{height:400px}
-  .countdown-numbers b{font-size:35px}.countdown-numbers i{font-size:25px}
-}
-
-/* Tablet and phone layout: a true single-column reading experience. */
-@media(max-width:900px), (hover:none) and (pointer:coarse) and (max-device-width:900px){
-  .country .nav{height:auto;min-height:0;flex-wrap:wrap;gap:12px;padding:14px 0}
-  .country .nav-links{order:3;display:flex;width:100%;gap:8px;overflow-x:auto;padding:10px 0 2px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
-  .country .nav-links::-webkit-scrollbar{display:none}
-  .country .nav-links a{flex:0 0 auto;min-height:44px;display:flex;align-items:center;border:1px solid #ffffff30;border-radius:99px;padding:9px 13px;color:#fff8e9;font-size:14px;white-space:nowrap}
-  .country-grid{min-height:0}.country-copy,.country-visual{min-width:0}
-  .section-head,.island-intro,.parks-intro,.prepare-head,.media-head,.photo-missions-head,.safari-day-head{display:grid;grid-template-columns:minmax(0,1fr);gap:20px;align-items:start}
-  .section-note,.island-intro>p,.parks-intro>p:last-child,.prepare-head>p,.media-head>p:last-child,.photo-missions-head>p:last-child,.safari-day-head>p{width:auto;max-width:none;margin:0}
-  .island-grid-three,.book-grid,.film-grid,.photo-missions,.tips-grid{grid-template-columns:minmax(0,1fr)}
-  .park-guide,.jeep-section,.giraffe-stay,.return-trip,.mission-board,.safari-day-story,.explorer-passport,.prediction-card,.swahili-player{max-width:100%;min-width:0}
-  .park-copy,.jeep-copy,.giraffe-copy,.return-trip{grid-template-columns:minmax(0,1fr)}
-  .park-photo-pair,.jeep-photo-pair,.giraffe-gallery-simple{grid-template-columns:minmax(0,1fr)}
-  .giraffe-gallery-simple .giraffe-main,.giraffe-gallery-simple .giraffe-side{grid-column:1;grid-row:auto}
-  .photo-mission{grid-template-columns:minmax(0,1fr);min-height:0}.photo-mission:nth-child(even) .photo-mission-image{order:0}
-  .photo-mission-image{min-height:0;aspect-ratio:4/3}.photo-mission-copy{padding:28px}
-  .countdown-inner{grid-template-columns:minmax(0,1fr);gap:24px}.countdown-numbers{width:100%;justify-content:space-between}
-}
-
-@media(max-width:600px), (hover:none) and (pointer:coarse) and (max-device-width:600px){
-  .country .nav .dates{display:none}
-  .country .nav-links{width:calc(100% + 28px);margin-inline:-14px;padding-inline:14px}
-  .country-grid{padding-top:36px}.country-visual{margin-top:4px}
-  .country-facts{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
-  .country-facts::-webkit-scrollbar{display:none}
-  .country-facts article,.country-facts article:nth-child(2){flex:0 0 82%;scroll-snap-align:start;border-right:1px solid #ffffff20;border-bottom:0}
-  .route-notes{display:block}.route-notes article{border-right:0!important}
-  .park-guide,.jeep-section,.giraffe-stay,.return-trip,.mission-board,.safari-day-story,.explorer-passport,.prediction-card,.swahili-player{border-left:0;border-right:0}
-  .park-photo-story,.jeep-photo-story{padding:5px}.park-photo-pair,.jeep-photo-pair{gap:5px;margin-top:5px}
-  .park-stats{grid-template-columns:1fr 1fr}.park-stats span{border-right:1px solid #d8ccb8}.park-stats span:nth-child(2){border-right:0}.park-stats span:last-child{grid-column:1/-1}
-  .safari-reality-note{margin:0 0 32px;padding:22px 18px}
-  .before-flight{margin-inline:0}.tips-filter{scroll-snap-type:x proximity}.tips-filter button{scroll-snap-align:start}
-  .swahili-buttons,.sheet-fields,.packing-groups,.results-card{grid-template-columns:minmax(0,1fr)}
-  .swahili-word:last-child,.note-field,.photo-field,.result-actions{grid-column:1}
-}
-
-@media(hover:none) and (pointer:coarse){
-  a,button,label{touch-action:manipulation}
-  .island-card:hover img,.book-card:hover,.film-card:hover,.photo-mission:hover img{transform:none}
-}
