@@ -1,0 +1,28 @@
+/* Safari field journal v9: compact home, expandable recaps and unrestricted park selection */
+.safari-results-toggle{width:min(960px,calc(100% - 30px));margin:18px auto 4px;scroll-margin-top:16px}
+.safari-results-toggle-button{width:100%;min-height:65px;padding:11px 20px;display:flex;align-items:center;gap:15px;text-align:left;border:1px solid #aabdaf;border-radius:12px;background:#edf1e7;color:#183b2a;cursor:pointer}
+.safari-results-toggle-icon{display:grid;place-items:center;flex:0 0 40px;width:40px;height:40px;border-radius:11px;background:#1d4836;color:#fdf8e8;font-size:22px}
+.safari-results-toggle-copy{display:flex;flex-direction:column;gap:3px;flex:1;min-width:0}
+.safari-results-toggle-copy b{font-size:16px;font-weight:800;line-height:1.2}
+.safari-results-toggle-copy small{font-size:11px;line-height:1.35;color:#5c7766}
+.safari-results-toggle-arrow{font-size:27px;color:#31563e;line-height:1}
+.safari-results-toggle-button:hover{background:#e4ecdf}
+.safari-results-toggle-button:focus-visible{outline:3px solid #d49255;outline-offset:3px}
+.safari-park-any-hint{grid-column:1/-1;margin:0 0 9px;color:#59735f;font-size:12px;line-height:1.5}
+.field-app .animal-catalog{margin-top:28px}
+.field-app .big-five-section{margin-top:28px}
+.field-app .safari-days{margin-top:30px}
+.field-app .field-summary{margin-top:16px}
+.field-app .field-tabs{grid-template-columns:repeat(3,minmax(0,1fr))}
+.field-app .field-tabs span{font-size:10px}
+.field-app .field-tabs a{min-width:0}
+@media(max-width:700px){
+ .safari-results-toggle{width:calc(100% - 26px);margin:14px auto 5px}
+ .safari-results-toggle-button{min-height:62px;padding:10px 12px;gap:10px;border-radius:11px}
+ .safari-results-toggle-icon{width:35px;height:35px;flex-basis:35px}
+ .safari-results-toggle-copy b{font-size:14px}
+ .safari-results-toggle-copy small{font-size:10px}
+ .field-app .animal-catalog{margin-top:22px}
+ .field-app .field-tabs span{font-size:10px}
+ .safari-park-any-hint{font-size:11px}
+}
