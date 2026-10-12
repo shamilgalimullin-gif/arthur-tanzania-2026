@@ -1,8 +1,8 @@
-const CACHE = 'arthur-safari-v5';
+const CACHE = 'arthur-safari-v6';
 const ROOT = new URL('./', self.location.href).pathname;
 const APP_PAGE = ROOT === '/' ? '/safari' : ROOT;
 const ANIMAL_IDS = ['lion','elephant','buffalo','rhino','leopard','cheetah','hyena','jackal','bat-eared-fox','mongoose','giraffe','zebra','wildebeest','impala','thomson-gazelle','grant-gazelle','eland','topi','hartebeest','waterbuck','dikdik','reedbuck','bushbuck','oryx','hippo','warthog','baboon','vervet','rock-hyrax','porcupine','ostrich','secretary','crowned-crane','flamingo','kori-bustard','roller','hornbill','marabou','vulture','fish-eagle','guineafowl','weaver','crocodile','monitor','tortoise','greater-kudu','lesser-kudu','gerenuk','wild-dog','golden-wolf','caracal','aardwolf','honey-badger','pangolin','aardvark','genet','civet','bushbaby','african-hare','springhare','striped-hyena','common-duiker','klipspringer','steenbok','bushpig','ground-hornbill','bateleur','martial-eagle','tawny-eagle','white-backed-vulture','lappet-faced-vulture','yellow-billed-stork','saddle-billed-stork','fischer-lovebird','superb-starling','red-yellow-barbet','go-away-bird','rock-python','agama','flap-necked-chameleon','puff-adder'];
-const OFFLINE = [APP_PAGE, `${ROOT}serengeti.jpg`, `${ROOT}manifest.webmanifest`, `${ROOT}animals/serval.png`, ...ANIMAL_IDS.map(id => `${ROOT}animals/${id}.jpg`)];
+const OFFLINE = [APP_PAGE, `${ROOT}assets/index-safari-v6.js`, `${ROOT}assets/index-DdnHW3ql.css`, `${ROOT}styles.css`, `${ROOT}safari-extensions-v6.css`, `${ROOT}serengeti.jpg`, `${ROOT}manifest.webmanifest`, `${ROOT}animals/serval.png`, ...ANIMAL_IDS.map(id => `${ROOT}animals/${id}.jpg`)];
 
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(OFFLINE)));
@@ -28,8 +28,20 @@ self.addEventListener('fetch', event => {
     return;
   }
 
+  const externalAnimalPhoto = request.destination === 'image' && (url.hostname.endsWith('.inaturalist.org') || url.hostname === 'inaturalist-open-data.s3.amazonaws.com');
+  if (externalAnimalPhoto) {
+    event.respondWith(caches.match(request).then(cached => cached || fetch(request).then(response => {
+      if (response.ok || response.type === 'opaque') caches.open(CACHE).then(cache => cache.put(request, response.clone())).catch(() => {});
+      return response;
+    })));
+    return;
+  }
+
   const isStaticSafariAsset = url.origin === self.location.origin && (
     url.pathname.startsWith(`${ROOT}animals/`) ||
+    url.pathname.startsWith(`${ROOT}assets/`) ||
+    url.pathname === `${ROOT}styles.css` ||
+    url.pathname === `${ROOT}safari-extensions-v6.css` ||
     url.pathname === `${ROOT}serengeti.jpg` ||
     url.pathname === `${ROOT}manifest.webmanifest`
   );
