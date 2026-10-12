@@ -1,0 +1,10 @@
+/* Safari field guide v6 — category chips and phone-friendly scrolling */
+@media(min-width:701px){
+  .animal-tools .filter-scroll{grid-row:2;grid-column:1;overflow-x:auto;scrollbar-width:thin}
+  .animal-tools .view-switch{grid-row:2;grid-column:2}
+}
+.category-filter{display:flex;gap:8px;grid-column:1/-1;grid-row:3;min-width:0;max-width:100%;overflow-x:auto;padding:4px 0 10px;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+.category-filter button{flex:0 0 auto;min-height:42px;padding:9px 15px;border:1px solid #baa98f;border-radius:99px;background:#fffaf0;color:#374f43;font-size:12px;font-weight:700;white-space:nowrap;cursor:pointer}
+.category-filter button.is-active{background:#172b24;border-color:#172b24;color:#fff9eb}
+.category-filter button:focus-visible{outline:3px solid #dc8e5c;outline-offset:2px}
+@media(max-width:700px){.category-filter{grid-row:auto;grid-column:auto;margin:10px 0 12px}.category-filter button{min-height:45px;font-size:12px}}
