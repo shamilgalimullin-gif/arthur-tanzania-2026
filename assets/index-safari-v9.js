@@ -202,7 +202,7 @@ function T(){let[showResults,setShowResults]=(0,_.useState)(false),[q,setObs]=(0
  ...q.filter(o=>o.speciesId===D.id).map(o=>safariEl("div",{key:o.id,className:"safari-previous-row"},
    safariEl("span",null,o.date+" · "+safariEncounterText(o)),
    safariEl("button",{type:"button",onClick:()=>DeleteObs(o.id)},"Отменить")))
-),(0,b.jsxs)(`div`,{className:`sheet-fields`,children:[(0,b.jsxs)(`label`,{children:[(0,b.jsx)(`span`,{children:`Где увидели`}),(0,b.jsx)(`select`,{value:m.park,onChange:e=>h(old=>({...old,park:e.target.value})),children:x.map(e=>(0,b.jsx)(`option`,{value:e.id,children:e.name},e.id))})]}),(0,b.jsxs)(`label`,{children:[(0,b.jsx)(`span`,{children:`Дата`}),(0,b.jsx)(`input`,{type:`date`,value:m.date,onChange:e=>h(t=>({...t,date:e.target.value}))})]}),safariEl("fieldset",{className:"safari-count-mode"},
+),(0,b.jsxs)(`div`,{className:`sheet-fields`,children:[(0,b.jsxs)(`label`,{children:[(0,b.jsx)(`span`,{children:`Где увидели`}),(0,b.jsx)(`select`,{value:m.park,onChange:e=>h(old=>({...old,park:e.target.value})),children:x.map(e=>(0,b.jsx)(`option`,{value:e.id,children:e.name},e.id))})]}),(0,b.jsx)(`p`,{className:`safari-park-any-hint`,children:`Можно выбрать любой парк — даже если вид обычно указан для другого.`}),(0,b.jsxs)(`label`,{children:[(0,b.jsx)(`span`,{children:`Дата`}),(0,b.jsx)(`input`,{type:`date`,value:m.date,onChange:e=>h(t=>({...t,date:e.target.value}))})]}),safariEl("fieldset",{className:"safari-count-mode"},
  safariEl("legend",null,"Как отметим встречу?"),
  safariEl("div",{className:"safari-mode-options"},
   safariEl("button",{type:"button",className:safariUncounted(m)?"is-active":"",onClick:()=>h(t=>({...t,countMode:"herd",groupLabel:t.groupLabel||"herd",adults:0,young:0,count:null}))},"Без подсчёта"),
