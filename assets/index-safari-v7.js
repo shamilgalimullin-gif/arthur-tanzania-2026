@@ -44,6 +44,7 @@ const safariTZDate=()=>{
 };
 const safariNum=x=>Math.max(0,Number.isFinite(Number(x))?Math.floor(Number(x)):0);
 const safariCount=x=>safariNum(x.adults??x.count)+safariNum(x.young);
+const safariPlural=(n,one,few,many)=>{const a=Math.abs(n)%100,b=a%10;return a>=11&&a<=14?many:b===1?one:b>=2&&b<=4?few:many};
 const safariMakeId=()=>("obs-"+Date.now().toString(36)+"-"+Math.random().toString(36).slice(2,10));
 function safariMigrate(data){
  if(Array.isArray(data.observations)){
@@ -78,7 +79,7 @@ function safariComputeDays(records){
 const safariSpeciesName=id=>S.find(s=>s.id===id)?.name||id;
 const safariDayText=(day,note="")=>{
  const tally=day.meetings.reduce((map,o)=>(map[o.speciesId]=(map[o.speciesId]||0)+safariCount(o),map),{});
- return ["Сафари — "+day.name+" ("+day.place+")",day.speciesCount+" видов, "+day.individuals+" особей, "+day.encounters+" наблюдений",
+ return ["Сафари — "+day.name+" ("+day.place+")",day.speciesCount+" "+safariPlural(day.speciesCount,"вид","вида","видов")+", "+day.individuals+" "+safariPlural(day.individuals,"особь","особи","особей")+", "+day.encounters+" "+safariPlural(day.encounters,"наблюдение","наблюдения","наблюдений"),
   ...Object.entries(tally).map(([id,n])=>"• "+safariSpeciesName(id)+" — "+n),
   note?"Впечатление дня: "+note:""].filter(Boolean).join("\n");
 };
@@ -102,27 +103,27 @@ function SafariDayReport({observations,notes,completed,selected,onSelect,onNote,
     h("span",null,"Считаем виды и отдельных животных по датам, не теряя повторные встречи.")
   ),
   h("div",{className:"safari-days-metrics"},
-    head("Больше всего видов",bestSpecies?speciesText:"Впереди",bestSpecies?bestSpecies+" разных видов":"Добавьте первые наблюдения"),
-    head("Больше всего животных",bestAnimals?bigWinners.join(" и "):"Впереди",bestAnimals?bestAnimals+" особей":"Взрослые и детёныши вместе")
+    head("Больше всего видов",bestSpecies?speciesText:"Впереди",bestSpecies?bestSpecies+" "+safariPlural(bestSpecies,"вид","вида","видов"):"Добавьте первые наблюдения"),
+    head("Больше всего животных",bestAnimals?bigWinners.join(" и "):"Впереди",bestAnimals?bestAnimals+" "+safariPlural(bestAnimals,"особь","особи","особей"):"Взрослые и детёныши вместе")
   ),
   h("div",{className:"safari-day-selector","aria-label":"Выбор дня сафари"},
    days.map(d=>h("button",{key:d.date,type:"button",className:"safari-day-tile"+(selected===d.date?" is-active":"")+(completed.includes(d.date)?" is-final":""),
        onClick:()=>onSelect(d.date),"aria-pressed":selected===d.date},
      h("span",{className:"safari-day-date"},d.name,completed.includes(d.date)?" ✓":""),
      h("small",null,d.place),
-     h("strong",null,d.speciesCount,h("span",null," видов")),
+     h("strong",null,d.speciesCount,h("span",null," "+safariPlural(d.speciesCount,"вид","вида","видов"))),
      h("div",{className:"safari-day-track"},h("i",{style:{width:(bestSpecies?d.speciesCount/bestSpecies*100:0)+"%"}})),
-     h("small",null,d.individuals+" особей · "+d.encounters+" встреч")
+     h("small",null,d.individuals+" "+safariPlural(d.individuals,"особь","особи","особей")+" · "+d.encounters+" "+safariPlural(d.encounters,"встреча","встречи","встреч"))
    ))
   ),
   h("div",{className:"safari-day-detail"},
    h("header",null,
     h("div",null,h("span",null,"Итог за "+day.name),h("h3",null,day.place)),
-    h("div",{className:"safari-day-totals"},h("b",null,day.speciesCount+" видов"),h("b",null,day.individuals+" животных"))
+    h("div",{className:"safari-day-totals"},h("b",null,day.speciesCount+" "+safariPlural(day.speciesCount,"вид","вида","видов")),h("b",null,day.individuals+" "+safariPlural(day.individuals,"животное","животных","животных")))
    ),
    day.meetings.length
     ?h("div",{className:"safari-day-entries"},day.meetings.map((o,i)=>h("div",{className:"safari-day-entry",key:o.id||i},
-        h("div",null,h("b",null,safariSpeciesName(o.speciesId)),h("span",null,safariCount(o)+" особей"+(o.note?" · "+o.note:""))),
+        h("div",null,h("b",null,safariSpeciesName(o.speciesId)),h("span",null,safariCount(o)+" "+safariPlural(safariCount(o),"особь","особи","особей")+(o.note?" · "+o.note:""))),
         h("button",{type:"button",onClick:()=>onEdit(o.id)},"Изменить")
       )))
     :h("p",{className:"safari-day-empty"},"Пока ничего не записано. Выберите животное в каталоге и укажите этот день."),
