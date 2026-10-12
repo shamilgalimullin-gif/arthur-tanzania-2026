@@ -1,0 +1,60 @@
+
+/* Safari v7 daily sighting reports */
+.safari-days{scroll-margin-top:24px}
+.safari-days-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:25px 0 20px}
+.safari-days-metric{padding:24px 25px;background:#172b24;color:#fff8e9;border-radius:4px;min-width:0}
+.safari-days-metric:first-child{background:#203f32}
+.safari-days-metric>span{display:block;text-transform:uppercase;letter-spacing:.14em;color:#a4cec0;font-size:10px;font-weight:800}
+.safari-days-metric strong{display:block;margin-top:12px;font:500 clamp(24px,3vw,38px)/1.12 var(--font-display);overflow-wrap:anywhere}
+.safari-days-metric small{display:block;margin-top:8px;color:#e8e9d3b8;font-size:12px;line-height:1.5}
+.safari-day-selector{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.safari-day-tile{min-width:0;padding:20px 16px 17px;background:#fffaf0;border:1px solid #cbbb9f;text-align:left;color:#172b24;cursor:pointer;border-radius:4px;transition:background .15s ease,border-color .15s ease}
+.safari-day-tile.is-active{border:2px solid #a8412b;padding:19px 15px 16px;background:#f5e7cb}
+.safari-day-tile:focus-visible,.safari-day-actions button:focus-visible,.safari-day-actions a:focus-visible,.safari-day-entry button:focus-visible{outline:3px solid #e8a652;outline-offset:2px}
+.safari-day-date{display:block;font-weight:800;font-size:16px;margin-bottom:3px}
+.safari-day-tile>small{display:block;color:#69756b;font-size:10px;line-height:1.5;min-height:28px}
+.safari-day-tile>strong{display:block;font:500 45px/1.05 var(--font-display);margin:15px 0 12px;letter-spacing:-.04em}
+.safari-day-tile>strong span{font:600 11px/1.4 system-ui,sans-serif;letter-spacing:0}
+.safari-day-track{height:5px;background:#dfd5c6;overflow:hidden;border-radius:5px;margin-bottom:11px}
+.safari-day-track i{display:block;height:100%;background:#bd5a34;transition:width .3s ease}
+.safari-day-tile.is-final .safari-day-date{color:#226b53}
+.safari-day-detail{border:1px solid #d6c5a6;background:#fffaf0;padding:27px 29px;margin-top:15px}
+.safari-day-detail>header{display:flex;align-items:end;justify-content:space-between;gap:15px;border-bottom:1px solid #d7c9b0;padding-bottom:20px;margin-bottom:18px}
+.safari-day-detail>header span{font-size:10px;text-transform:uppercase;letter-spacing:.12em;font-weight:800;color:#a8412b}
+.safari-day-detail h3{font:500 34px/1.2 var(--font-display);margin-top:4px}
+.safari-day-totals{display:flex;gap:10px;flex-wrap:wrap}
+.safari-day-totals b{background:#eae1d2;border-radius:20px;padding:9px 13px;font-size:11px;white-space:nowrap}
+.safari-day-empty{font-size:14px;line-height:1.7;color:#737f73;margin:20px 0}
+.safari-day-entries{display:grid;gap:0;margin-bottom:26px;max-height:420px;overflow-y:auto}
+.safari-day-entry{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:13px 0;border-bottom:1px solid #e4d9c6}
+.safari-day-entry b{display:block;font-size:14px;color:#1d3329}
+.safari-day-entry span{display:block;font-size:11px;line-height:1.5;color:#718071;margin-top:4px;overflow-wrap:anywhere}
+.safari-day-entry button{flex-shrink:0;padding:10px 13px;border:1px solid #bea98d;color:#1d3329;border-radius:6px;font-size:12px;font-weight:700;background:#f7f0e4;cursor:pointer}
+.safari-day-note{display:block;margin-top:14px}
+.safari-day-note>span{display:block;font-size:12px;font-weight:800;margin-bottom:8px;color:#18372a}
+.safari-day-note textarea{display:block;width:100%;box-sizing:border-box;resize:vertical;min-height:95px;padding:13px;border:1px solid #cbbb9f;border-radius:5px;color:#172b24;background:#fffdf8;font-size:14px;line-height:1.5}
+.safari-day-note textarea:focus{outline:2px solid #bd5a34;outline-offset:2px}
+.safari-day-autosave{font-size:11px;color:#63766a;margin:10px 0 17px}
+.safari-day-actions{display:flex;gap:9px;align-items:center;flex-wrap:wrap}
+.safari-day-actions button,.safari-day-add{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 14px;font-size:12px;font-weight:800;border-radius:5px;text-decoration:none;cursor:pointer;white-space:nowrap}
+.safari-day-finalize{border:1px solid #204b3a;background:#1d4737;color:#fff8e9}
+.safari-day-share{border:1px solid #a8412b;background:transparent;color:#a8412b}
+.safari-day-add{border:1px solid #cbbb9f;color:#203a2b;background:#f6ebda}
+@media(max-width:700px){
+ .safari-days{margin-top:36px}
+ .safari-days .field-section-head{align-items:start}
+ .safari-days .field-section-head>span{width:auto}
+ .safari-days-metrics{grid-template-columns:1fr;gap:9px}
+ .safari-days-metric{padding:20px}
+ .safari-days-metric strong{font-size:26px}
+ .safari-day-selector{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+ .safari-day-tile{padding:16px 13px}
+ .safari-day-tile.is-active{padding:15px 12px}
+ .safari-day-tile>strong{font-size:40px;margin:11px 0}
+ .safari-day-date{font-size:14px}
+ .safari-day-detail{padding:20px 16px}
+ .safari-day-detail>header{display:block}
+ .safari-day-detail h3{font-size:30px}
+ .safari-day-totals{margin-top:11px}
+ .safari-day-actions button,.safari-day-add{flex:1 1 100%}
+}
