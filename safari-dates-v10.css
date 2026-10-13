@@ -1,0 +1,15 @@
+
+/* Safari v10: date-scoped checkmarks with a native iOS pop-up selector */
+.safari-date-filter{grid-column:1/-1;grid-row:4;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:9px 16px;padding:10px 15px;margin:2px 0 4px;border:1px solid #d6c7af;border-radius:12px;background:#f9f1e2}
+.safari-date-filter label{display:flex;align-items:center;gap:14px;min-width:0;flex-wrap:wrap}
+.safari-date-filter label>span{font-size:12px;color:#5a705f;font-weight:800;white-space:nowrap}
+.safari-date-filter select{font-family:inherit;font-size:15px;font-weight:800;color:#1e4232;background:#fffdf7;border:1px solid #bdab8d;border-radius:9px;min-width:175px;max-width:100%;height:44px;padding:8px 13px;cursor:pointer}
+.safari-date-filter select:focus-visible{outline:3px solid #bd6c44;outline-offset:2px}
+.safari-date-hint{font-size:11px;line-height:1.4;color:#637b69}
+@media(max-width:700px){
+ .safari-date-filter{display:flex;grid-row:auto;grid-column:auto;flex-direction:column;align-items:stretch;margin:15px 0 12px;padding:12px;gap:7px}
+ .safari-date-filter label{display:flex;align-items:center;justify-content:space-between;flex-wrap:nowrap;gap:10px}
+ .safari-date-filter label>span{font-size:11px;white-space:normal;flex:1}
+ .safari-date-filter select{font-size:16px;min-width:0;max-width:72%;width:auto;height:46px;flex:0 1 auto;padding:8px}
+ .safari-date-hint{font-size:11px}
+}
