@@ -1,12 +1,12 @@
 /* Safari v12: reliable updates on slow mobile networks.
    Update the page and UI first; cache wildlife photos only as they are viewed. */
-const CACHE = 'arthur-safari-v15';
+const CACHE = 'arthur-safari-v16';
 const MEDIA_CACHE = 'arthur-safari-media-v12';
 const ROOT = new URL('./', self.location.href).pathname;
 const APP_PAGE = ROOT;
 const CORE = [
   APP_PAGE,
-  ROOT + 'assets/index-safari-v15.js',
+  ROOT + 'assets/index-safari-v16.js',
   ROOT + 'assets/index-DdnHW3ql.css',
   ROOT + 'styles.css',
   ROOT + 'safari-extensions-v6.css',
