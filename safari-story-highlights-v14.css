@@ -1,0 +1,4 @@
+/* v14: readable memorable species preview, one story only */
+.safari-story-highlights-preview{display:block;padding-top:11px;margin-top:6px;border-top:1px solid #c4cdbb;color:#335848;font-size:13px;line-height:1.65;overflow-wrap:anywhere}
+.safari-story-counts{gap:9px}
+@media(max-width:700px){.safari-story-highlights-preview{font-size:12px;line-height:1.55}}
