@@ -1,63 +1,98 @@
-const CACHE = 'arthur-safari-v11';
+/* Safari v12: reliable updates on slow mobile networks.
+   Update the page and UI first; cache wildlife photos only as they are viewed. */
+const CACHE = 'arthur-safari-v12';
+const MEDIA_CACHE = 'arthur-safari-media-v12';
 const ROOT = new URL('./', self.location.href).pathname;
-const APP_PAGE = ROOT === '/' ? '/safari' : ROOT;
-const ANIMAL_IDS = ['lion','elephant','buffalo','rhino','leopard','cheetah','hyena','jackal','bat-eared-fox','mongoose','giraffe','zebra','wildebeest','impala','thomson-gazelle','grant-gazelle','eland','topi','hartebeest','waterbuck','dikdik','reedbuck','bushbuck','oryx','hippo','warthog','baboon','vervet','rock-hyrax','porcupine','ostrich','secretary','crowned-crane','flamingo','kori-bustard','roller','hornbill','marabou','vulture','fish-eagle','guineafowl','weaver','crocodile','monitor','tortoise','greater-kudu','lesser-kudu','gerenuk','wild-dog','golden-wolf','caracal','aardwolf','honey-badger','pangolin','aardvark','genet','civet','bushbaby','african-hare','springhare','striped-hyena','common-duiker','klipspringer','steenbok','bushpig','ground-hornbill','bateleur','martial-eagle','tawny-eagle','white-backed-vulture','lappet-faced-vulture','yellow-billed-stork','saddle-billed-stork','fischer-lovebird','superb-starling','red-yellow-barbet','go-away-bird','rock-python','agama','flap-necked-chameleon','puff-adder'];
-const OFFLINE = [APP_PAGE, `${ROOT}assets/index-safari-v11.js`, `${ROOT}assets/index-DdnHW3ql.css`, `${ROOT}styles.css`, `${ROOT}safari-extensions-v6.css`, `${ROOT}safari-daily-v7.css`, `${ROOT}safari-encounters-v8.css`, `${ROOT}safari-simplified-v9.css`, `${ROOT}safari-dates-v10.css`, `${ROOT}safari-story-v11.css`, `${ROOT}serengeti.jpg`, `${ROOT}manifest.webmanifest`, `${ROOT}animals/serval.png`, ...ANIMAL_IDS.map(id => `${ROOT}animals/${id}.jpg`)];
+const APP_PAGE = ROOT;
+const CORE = [
+  APP_PAGE,
+  ROOT + 'assets/index-safari-v12.js',
+  ROOT + 'assets/index-DdnHW3ql.css',
+  ROOT + 'styles.css',
+  ROOT + 'safari-extensions-v6.css',
+  ROOT + 'safari-daily-v7.css',
+  ROOT + 'safari-encounters-v8.css',
+  ROOT + 'safari-simplified-v9.css',
+  ROOT + 'safari-dates-v10.css',
+  ROOT + 'safari-story-v11.css',
+  ROOT + 'safari-story-visible-v12.css',
+  ROOT + 'manifest.webmanifest'
+];
 
 self.addEventListener('install', event => {
-  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(OFFLINE)));
-  self.skipWaiting();
+  event.waitUntil((async () => {
+    const cache = await caches.open(CACHE);
+    // Each request is independent. An unavailable old CSS file won't block the update.
+    await Promise.allSettled(CORE.map(url =>
+      cache.add(new Request(url, { cache: 'reload' }))
+    ));
+    await self.skipWaiting();
+  })());
 });
 
 self.addEventListener('activate', event => {
-  event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key !== CACHE).map(key => caches.delete(key)))));
-  self.clients.claim();
+  event.waitUntil((async () => {
+    const keys = await caches.keys();
+    // Keep the preceding image-rich cache for offline wildlife photos during the trip.
+    const old = keys.filter(key =>
+      key.startsWith('arthur-safari-v') &&
+      key !== CACHE &&
+      key !== 'arthur-safari-v11'
+    );
+    await Promise.all(old.map(key => caches.delete(key)));
+    await self.clients.claim();
+  })());
 });
 
 self.addEventListener('fetch', event => {
-  const request = event.request;
-  if (request.method !== 'GET') return;
-  const url = new URL(request.url);
+  const req = event.request;
+  if (req.method !== 'GET') return;
+  const url = new URL(req.url);
+  const sameOrigin = url.origin === self.location.origin;
 
-  if (request.mode === 'navigate' && url.pathname.startsWith(APP_PAGE)) {
-    event.respondWith(fetch(request).then(response => {
-      const copy = response.clone();
-      caches.open(CACHE).then(cache => cache.put(APP_PAGE, copy));
-      return response;
-    }).catch(() => caches.match(APP_PAGE)));
+  if (req.mode === 'navigate' && sameOrigin && url.pathname.startsWith(ROOT)) {
+    event.respondWith(
+      fetch(req, { cache: 'no-store' }).then(async response => {
+        if (response.ok) {
+          const cache = await caches.open(CACHE);
+          cache.put(APP_PAGE, response.clone()).catch(() => {});
+        }
+        return response;
+      }).catch(async () =>
+        (await caches.match(APP_PAGE)) ||
+        new Response('Приложение офлайн. Подключитесь к сети для обновления.', {
+          status: 503, headers: { 'Content-Type': 'text/plain; charset=utf-8' }
+        })
+      )
+    );
     return;
   }
 
-  const externalAnimalPhoto = request.destination === 'image' && (url.hostname.endsWith('.inaturalist.org') || url.hostname === 'inaturalist-open-data.s3.amazonaws.com');
-  if (externalAnimalPhoto) {
-    event.respondWith(caches.match(request).then(cached => cached || fetch(request).then(response => {
-      if (response.ok || response.type === 'opaque') caches.open(CACHE).then(cache => cache.put(request, response.clone())).catch(() => {});
-      return response;
-    })));
-    return;
-  }
+  const externalWildlifePhoto = req.destination === 'image' &&
+    (url.hostname.endsWith('.inaturalist.org') || url.hostname === 'inaturalist-open-data.s3.amazonaws.com');
+  const wildlifePhoto = sameOrigin && url.pathname.startsWith(ROOT + 'animals/');
 
-  const isStaticSafariAsset = url.origin === self.location.origin && (
-    url.pathname.startsWith(`${ROOT}animals/`) ||
-    url.pathname.startsWith(`${ROOT}assets/`) ||
-    url.pathname === `${ROOT}styles.css` ||
-    url.pathname === `${ROOT}safari-extensions-v6.css` ||
-    url.pathname === `${ROOT}safari-daily-v7.css` ||
-    url.pathname === `${ROOT}safari-encounters-v8.css` ||
-    url.pathname === `${ROOT}safari-simplified-v9.css` ||
-    url.pathname === `${ROOT}safari-dates-v10.css` ||
-    url.pathname === `${ROOT}safari-story-v11.css` ||
-    url.pathname === `${ROOT}serengeti.jpg` ||
-    url.pathname === `${ROOT}manifest.webmanifest`
-  );
-
-  if (isStaticSafariAsset) {
-    event.respondWith(caches.match(request).then(cached => cached || fetch(request).then(response => {
-      if (response.ok) {
-        const copy = response.clone();
-        caches.open(CACHE).then(cache => cache.put(request, copy));
+  if (wildlifePhoto || externalWildlifePhoto) {
+    event.respondWith(caches.match(req).then(cached => cached || fetch(req).then(response => {
+      if (response.ok || response.type === 'opaque') {
+        caches.open(MEDIA_CACHE).then(cache => cache.put(req, response.clone())).catch(() => {});
       }
       return response;
     })));
+    return;
+  }
+
+  const appAsset = sameOrigin && (
+    url.pathname.startsWith(ROOT + 'assets/') ||
+    url.pathname === ROOT + 'styles.css' ||
+    url.pathname.endsWith('.css') && url.pathname.startsWith(ROOT) ||
+    url.pathname === ROOT + 'manifest.webmanifest'
+  );
+  if (appAsset) {
+    // Do not keep serving previous-version CSS and JS when connectivity is available.
+    event.respondWith(fetch(req, { cache: 'no-cache' }).then(response => {
+      if (response.ok) caches.open(CACHE).then(cache => cache.put(req, response.clone())).catch(() => {});
+      return response;
+    }).catch(() => caches.match(req)));
   }
 });
