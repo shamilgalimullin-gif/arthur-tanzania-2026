@@ -1,0 +1,14 @@
+
+/* Safari story v13: full animal names instead of encounter statistics. */
+.safari-story-pager{display:flex;gap:10px;justify-content:space-between;align-items:center;margin:12px 0 2px;padding:0 2px}
+.safari-story-pager strong{font-size:13px;font-weight:850;color:#274636;white-space:nowrap}
+.safari-story-pager button{min-height:43px;padding:9px 13px;border:1px solid #bbaa91;border-radius:8px;background:#fff9eb;color:#203e2f;font-size:12px;font-weight:800;cursor:pointer}
+.safari-story-pager button:disabled{opacity:.4;cursor:default}
+.safari-story-animal-preview{display:block;max-height:140px;overflow-y:auto;padding-top:9px;border-top:1px solid #c0cbb6;margin-top:7px;font-size:12px;line-height:1.6;color:#405e4e;overflow-wrap:anywhere}
+.safari-story-counts{gap:10px}
+@media(max-width:700px){
+ .safari-story-pager{gap:6px}
+ .safari-story-pager button{font-size:12px;padding:9px 12px}
+ .safari-story-pager strong{font-size:12px}
+ .safari-story-animal-preview{font-size:11px;max-height:95px}
+}
