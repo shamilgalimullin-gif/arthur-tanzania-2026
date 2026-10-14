@@ -306,7 +306,7 @@ function safariStoryDraw(canvas,photo,data,themeName){
  }else{
   names.forEach((name,i)=>{
    const col=Math.floor(i/4),row=i%4;
-   const x=96+col*470,y=1644+row*65,width=414;
+   const x=96+col*470,y=1640+row*58,width=414;
    c.fillStyle=theme.accent;c.beginPath();c.arc(x+5,y-8,4.5,0,Math.PI*2);c.fill();
    const t=safariStoryNameLines(c,name,width);
    c.fillStyle=theme.light;c.font="600 "+t.size+"px Arial,sans-serif";
