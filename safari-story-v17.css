@@ -1,0 +1,17 @@
+/* Safari stories v17: minimal frameless composition and optional 2–3 photo collage */
+.safari-story-preview{padding:0;background:transparent;border:0;border-radius:0}
+.safari-story-preview canvas{border-radius:0;box-shadow:0 8px 22px rgba(0,0,0,.18)}
+.safari-story-preview p{margin:12px 0}
+.safari-story-photo-layout{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.safari-story-photo-layout button{min-height:48px;padding:10px 8px;border:1px solid #b7a993;border-radius:9px;color:#204436;background:#fffaf2;font-size:13px;font-weight:800;cursor:pointer}
+.safari-story-photo-layout button.is-active{color:#fff9e7;background:#213f35;border-color:#213f35}
+.safari-story-photo-layout button:focus-visible{outline:3px solid #de9a54;outline-offset:2px}
+.safari-story-photo-row button:disabled{opacity:.48;cursor:wait}
+.safari-story-photo-chips{display:flex;gap:8px;flex-wrap:wrap}
+.safari-story-photo-chip{display:flex;align-items:center;justify-content:space-between;gap:12px;min-width:100px;padding:7px 9px 7px 12px;border:1px solid #cfbda0;border-radius:9px;background:#f0eadb;color:#284c3c;font-size:12px;font-weight:800}
+.safari-story-photo-chip button{display:grid;place-items:center;width:30px;height:30px;border:0;border-radius:7px;background:#d9cfbc;color:#244c38;font-size:21px;line-height:1;cursor:pointer}
+@media(max-width:700px){
+ .safari-story-preview{width:min(350px,100%);padding:0}
+ .safari-story-photo-layout button{font-size:12px;min-height:48px}
+ .safari-story-photo-chip{min-width:97px}
+}
