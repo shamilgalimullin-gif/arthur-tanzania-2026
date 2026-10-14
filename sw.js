@@ -1,12 +1,12 @@
 /* Safari v12: reliable updates on slow mobile networks.
    Update the page and UI first; cache wildlife photos only as they are viewed. */
-const CACHE = 'arthur-safari-v12';
+const CACHE = 'arthur-safari-v14';
 const MEDIA_CACHE = 'arthur-safari-media-v12';
 const ROOT = new URL('./', self.location.href).pathname;
 const APP_PAGE = ROOT;
 const CORE = [
   APP_PAGE,
-  ROOT + 'assets/index-safari-v12.js',
+  ROOT + 'assets/index-safari-v14.js',
   ROOT + 'assets/index-DdnHW3ql.css',
   ROOT + 'styles.css',
   ROOT + 'safari-extensions-v6.css',
@@ -16,6 +16,7 @@ const CORE = [
   ROOT + 'safari-dates-v10.css',
   ROOT + 'safari-story-v11.css',
   ROOT + 'safari-story-visible-v12.css',
+  ROOT + 'safari-story-highlights-v14.css',
   ROOT + 'manifest.webmanifest'
 ];
 
@@ -37,7 +38,7 @@ self.addEventListener('activate', event => {
     const old = keys.filter(key =>
       key.startsWith('arthur-safari-v') &&
       key !== CACHE &&
-      key !== 'arthur-safari-v11'
+      key !== 'arthur-safari-v12'
     );
     await Promise.all(old.map(key => caches.delete(key)));
     await self.clients.claim();
