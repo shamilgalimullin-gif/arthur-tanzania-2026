@@ -1,0 +1,14 @@
+/* v15: all sighted species across legible vertical story pages */
+.safari-story-pager{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:12px 2px 3px}
+.safari-story-pager strong{color:#264639;font-weight:800;font-size:12px;white-space:nowrap}
+.safari-story-pager button{min-height:43px;border:1px solid #b4a68c;border-radius:8px;color:#224b39;background:#fff9ee;font-size:12px;font-weight:800;padding:8px 11px;cursor:pointer}
+.safari-story-pager button:disabled{opacity:.4;cursor:default}
+.safari-story-pager button:focus-visible{outline:3px solid #bb754e;outline-offset:2px}
+.safari-story-animal-preview{max-height:130px;overflow:auto;font-size:12px;line-height:1.6;color:#36564a;background:#f1f1df;padding:8px 10px;border-radius:6px}
+.safari-story-counts{gap:9px}
+@media(max-width:700px){
+.safari-story-pager{margin:10px 0 4px;gap:6px}
+.safari-story-pager button{min-height:44px;min-width:72px;padding:6px;font-size:12px}
+.safari-story-pager strong{font-size:12px}
+.safari-story-animal-preview{max-height:110px}
+}
