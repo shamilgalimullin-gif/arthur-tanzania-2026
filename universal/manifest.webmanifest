@@ -1,0 +1,11 @@
+{
+  "name": "Моё сафари — дневник приключений",
+  "short_name": "Моё сафари",
+  "description": "Дневник сафари для путешественников по Танзании",
+  "start_url": "/arthur-tanzania-2026/universal/",
+  "scope": "/arthur-tanzania-2026/universal/",
+  "display": "standalone",
+  "background_color": "#f4eddf",
+  "theme_color": "#172b24",
+  "icons": [{"src": "../app-icon.jpg", "sizes": "320x320", "type": "image/jpeg", "purpose": "any"}]
+}
