@@ -1,8 +1,8 @@
 /* Universal safari — separate service-worker scope and cache. */
 const ROOT="/arthur-tanzania-2026/universal/";
-const CACHE="safari-universal-core-v1";
+const CACHE="safari-universal-core-v2";
 const MEDIA="safari-universal-media-v1";
-const CORE=[ROOT,ROOT+"app-v1.js",ROOT+"universal-init.js",ROOT+"manifest.webmanifest",
+const CORE=[ROOT,ROOT+"app-v2.js",ROOT+"universal-init.js",ROOT+"features-v2.js",ROOT+"features-v2.css",ROOT+"manifest.webmanifest",
 "/arthur-tanzania-2026/styles.css","/arthur-tanzania-2026/assets/index-DdnHW3ql.css",
 ...["safari-extensions-v6.css","safari-daily-v7.css","safari-encounters-v8.css","safari-simplified-v9.css","safari-dates-v10.css","safari-story-v11.css","safari-story-visible-v12.css","safari-story-full-list-v15.css","safari-story-v17.css"].map(x=>"/arthur-tanzania-2026/"+x)];
 self.addEventListener("install",e=>{e.waitUntil((async()=>{const cache=await caches.open(CACHE);await Promise.allSettled(CORE.map(u=>cache.add(new Request(u,{cache:"reload"}))));await self.skipWaiting()})())});
