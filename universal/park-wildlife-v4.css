@@ -1,0 +1,9 @@
+/* v4 park-specific wildlife selector */
+.safari-park-guide{display:flex;flex-direction:column;gap:8px;padding:15px 16px;border-radius:17px;background:#eaf1e7;border:1px solid #cbdac7;color:#244134;margin:12px 0 15px;line-height:1.45}
+.safari-park-guide strong{font-size:17px;line-height:1.22}
+.safari-park-guide p{font-size:13px;margin:0;color:#375747}
+.safari-park-guide small{font-size:12px;color:#687568;line-height:1.45}
+.safari-park-guide-switch{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:5px}
+.safari-park-guide-switch button{border-radius:12px;border:1px solid #cad3c6;background:#fff;color:#31513d;padding:9px 12px;font-size:12px;font-weight:650;cursor:pointer}
+.safari-park-guide-switch button.is-active{border-color:#466b53;background:#2e5640;color:#fff}
+@media(max-width:540px){.safari-park-guide-switch{display:grid;grid-template-columns:1fr 1fr}.safari-park-guide-switch button{min-height:41px;white-space:normal;padding:8px 7px}}
