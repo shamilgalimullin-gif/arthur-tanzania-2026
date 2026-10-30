@@ -1,0 +1,115 @@
+/* Universal Safari v2: trip manager and printable photo album */
+#safari-trip-tools{position:relative;z-index:25;background:#152a23;color:#fff;font-family:system-ui,-apple-system,Arial,sans-serif}
+.safari-tripbar-inner{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 22px}
+.safari-tripbar-title{min-width:0;display:flex;flex-direction:column;gap:2px}
+.safari-tripbar-title small{letter-spacing:.12em;font-size:10px;color:#d9ad70}
+.safari-tripbar-title strong{font-size:19px;font-weight:700}
+.safari-tripbar-title span{font-size:12px;color:#e0e7df;line-height:1.35}
+.safari-tripbar-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.safari-tripbar-actions button,.safari-tripbar-actions select,.safari-album-controls button,.safari-album-upload{border:1px solid #d6d2c5;background:#fff;color:#193126;border-radius:12px;padding:9px 12px;font-size:13px;cursor:pointer;font-weight:600;min-height:38px}
+.safari-tripbar-actions .safari-primary,.safari-primary{background:#e1a94f!important;border-color:#e1a94f!important;color:#192b23!important}
+.safari-trip-switch{display:flex;align-items:center;gap:5px;color:#c4d3cc;font-size:12px}
+.safari-trip-switch select{max-width:160px}
+.safari-universal-backdrop,.safari-album-backdrop{position:fixed;inset:0;background:rgba(8,21,15,.78);z-index:10000;display:flex;justify-content:center;align-items:center;padding:15px;overflow-y:auto}
+.safari-universal-dialog,.safari-album-dialog{font:15px/1.45 system-ui,-apple-system,Arial,sans-serif;background:#fcf8ef;color:#223a2d;box-shadow:0 16px 80px #0007;border-radius:20px;max-height:calc(100dvh - 30px);overflow-y:auto;width:min(610px,100%)}
+.safari-universal-dialog{padding:22px}
+.safari-dialog-head,.safari-album-toolbar{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.safari-dialog-head h2,.safari-album-toolbar h2{font-size:24px;line-height:1.15;margin:4px 0 18px}
+.safari-dialog-head small,.safari-album-toolbar small{font-size:10px;letter-spacing:.11em;color:#8a6840}
+.safari-dialog-head>button{border:0;background:#eae4d8;border-radius:50%;font-size:24px;width:36px;height:36px;cursor:pointer}
+#safari-trip-form>label,#safari-trip-form .safari-form-dates label{display:flex;flex-direction:column;gap:5px;margin:13px 0;font-size:13px;font-weight:600}
+#safari-trip-form input[type=text],#safari-trip-form input:not([type]),#safari-trip-form input[type=date],#safari-trip-form select{background:white;border:1px solid #d9d1c0;border-radius:10px;padding:12px;width:100%;min-width:0;font-size:15px;box-sizing:border-box;color:#263a30}
+.safari-form-dates{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+#safari-trip-form fieldset{border:1px solid #ded6c6;border-radius:14px;padding:12px}
+#safari-trip-form legend{font-weight:700;font-size:14px;padding:0 6px}
+.safari-parks-form{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.safari-park-check{display:flex;align-items:center;gap:8px;background:#fff;border-radius:10px;padding:9px;font-size:13px;cursor:pointer}
+.safari-park-check input{accent-color:#52755b;width:18px;height:18px}
+.safari-form-help,.safari-album-tip{color:#647466;font-size:12px;line-height:1.5}
+.safari-form-error{color:#ba4939;font-size:13px}
+.safari-form-actions{display:flex;gap:8px;justify-content:flex-end;align-items:center;flex-wrap:wrap;margin-top:18px}
+.safari-form-actions button{padding:11px 14px;border-radius:11px;border:1px solid #cabda9;background:#fff;cursor:pointer;font-weight:650}
+.safari-delete-trip{color:#ac4234!important;margin-right:auto}
+.safari-album-dialog{width:min(920px,100%);padding:0;max-height:calc(100dvh - 20px)}
+.safari-album-toolbar{position:sticky;top:0;z-index:10;background:#fcf8ef;border-bottom:1px solid #ded7cc;padding:15px 20px;flex-wrap:wrap;align-items:center}
+.safari-album-toolbar h2{margin-bottom:0;font-size:20px}
+.safari-album-controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.safari-album-upload{display:inline-flex;align-items:center}
+.safari-album-tip,.safari-album-status{margin:10px 20px;font-size:12px;color:#5e7263}
+.safari-album-photo-manager{margin:10px 20px}
+.safari-album-saved{background:#f2eadb;padding:12px;border-radius:12px}
+.safari-album-saved>div{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:12px;margin-top:7px}
+.safari-album-saved button{border:0;background:transparent;color:#a04434;text-decoration:underline;cursor:pointer}
+.safari-album-pages{display:flex;flex-direction:column;gap:20px;background:#ddd7c7;padding:20px}
+.safari-album-page{background:white;color:#25362c;width:100%;min-height:570px;box-sizing:border-box;padding:38px 42px;box-shadow:0 4px 20px #0002;position:relative;overflow:hidden}
+.safari-album-cover{background:#172d27;color:#fff;display:flex;flex-direction:column;justify-content:space-between;padding:0}
+.safari-cover-image{height:370px;min-height:40%;position:relative;background:radial-gradient(circle at 70% 40%,#b8874b,#614e35 36%,#263e36 85%)}
+.safari-cover-image img{width:100%;height:100%;object-fit:cover}
+.safari-cover-shape{font-size:140px;position:absolute;top:25%;left:35%;color:#edbf79}
+.safari-cover-copy{padding:35px 45px 45px}
+.safari-cover-copy>span,.safari-album-section-title small{font-size:12px;letter-spacing:.16em;font-weight:700;color:#e2ac65}
+.safari-cover-copy h1{font:700 clamp(32px,6vw,56px)/1.1 Georgia,serif;margin:14px 0 12px;overflow-wrap:anywhere}
+.safari-cover-copy p{font-size:16px;color:#f0e1c9}
+.safari-cover-stats{margin-top:23px;border-top:1px solid #ffffff33;padding-top:15px;font-size:14px}
+.safari-album-section-title{border-bottom:2px solid #bd945c;padding-bottom:16px;margin-bottom:20px}
+.safari-album-section-title h2{font:700 clamp(30px,5vw,46px)/1.1 Georgia,serif;margin:10px 0 5px}
+.safari-album-section-title p{font-size:14px;color:#65746a}
+.safari-album-day blockquote{margin:15px 0;padding:12px 16px;border-left:3px solid #ce9e61;background:#f7f1e6;white-space:pre-wrap;font-size:15px}
+.safari-album-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:20px 0}
+.safari-album-gallery figure{margin:0;overflow:hidden;background:#f2eee4;border-radius:8px}
+.safari-album-gallery img{display:block;aspect-ratio:4/3;width:100%;object-fit:cover}
+.safari-album-gallery figcaption{padding:6px 10px;font-size:12px;color:#536b59}
+.safari-album-day h3{font-size:17px;margin-bottom:9px}
+.safari-album-species{columns:2;column-gap:26px;padding-left:20px;font-size:13px;line-height:1.65}
+.safari-album-species li{break-inside:avoid}
+.safari-album-empty{display:flex;flex-direction:column;justify-content:center;text-align:center}
+@media(max-width:650px){
+ .safari-tripbar-inner{padding:12px;align-items:stretch;flex-direction:column;gap:10px}
+ .safari-tripbar-actions{gap:6px}
+ .safari-tripbar-actions button{flex:1;padding:9px 7px}
+ .safari-trip-switch{width:100%;justify-content:space-between}
+ .safari-trip-switch select{flex:1;max-width:none}
+ .safari-universal-dialog{padding:18px}
+ .safari-parks-form{grid-template-columns:1fr}
+ .safari-album-backdrop{padding:5px}
+ .safari-album-dialog{max-height:calc(100dvh - 10px)}
+ .safari-album-toolbar{padding:11px}
+ .safari-album-controls button,.safari-album-upload{font-size:12px;padding:8px}
+ .safari-album-pages{padding:8px;gap:9px}
+ .safari-album-page{min-height:440px;padding:20px}
+ .safari-album-cover{padding:0;min-height:450px}
+ .safari-cover-image{height:260px}
+ .safari-cover-copy{padding:24px}
+ .safari-album-gallery{gap:7px}
+ .safari-album-species{columns:1}
+}
+@media print{
+ @page{size:A4 portrait;margin:10mm}
+ html,body{height:auto!important;background:#fff!important;overflow:visible!important}
+ body>*:not(.safari-album-backdrop){display:none!important}
+ .safari-album-backdrop{position:static!important;display:block!important;background:#fff!important;padding:0!important;overflow:visible!important}
+ .safari-album-dialog{max-height:none!important;width:100%!important;overflow:visible!important;border:0!important;box-shadow:none!important;background:#fff!important}
+ .safari-album-toolbar,.safari-album-tip,.safari-album-status,.safari-album-photo-manager{display:none!important}
+ .safari-album-pages{display:block!important;padding:0!important;background:#fff!important;overflow:visible!important}
+ .safari-album-page{box-shadow:none!important;margin:0!important;padding:16mm 12mm!important;min-height:270mm!important;height:auto!important;break-after:page;page-break-after:always;break-inside:avoid;page-break-inside:avoid;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ .safari-album-page:last-child{break-after:auto;page-break-after:auto}
+ .safari-album-cover{padding:0!important}
+ .safari-cover-copy{padding:15mm!important}
+ .safari-cover-image{height:140mm!important}
+ .safari-album-gallery img{max-height:65mm!important}
+ .safari-album-gallery figure{break-inside:avoid}
+ .safari-album-species{columns:2}
+}
+
+/* Universal Safari v3: regional choices, easy to scan on iPhone */
+.safari-parks-form{display:block!important}
+.safari-park-region{border:0;margin:0 0 16px;padding:0}
+.safari-park-region h3{font-size:14px;letter-spacing:.02em;margin:0 0 10px;color:#2b4938;font-weight:750}
+.safari-parks-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.safari-park-region .safari-park-check{align-items:flex-start;min-width:0;border:1px solid #ded7ca;padding:11px 10px;border-radius:10px}
+.safari-park-region .safari-park-check input{flex:none;margin-top:3px}
+.safari-park-region .safari-park-check span{display:flex;flex-direction:column;gap:3px;min-width:0}
+.safari-park-region .safari-park-check strong{font-weight:650;overflow-wrap:anywhere}
+.safari-park-region .safari-park-check small{font-size:11px;color:#687869;font-weight:400;line-height:1.3}
+.safari-park-region .safari-park-check:has(input:checked){border-color:#5f9475;background:#eff7f0}
+@media(max-width:650px){.safari-parks-list{grid-template-columns:1fr}}
