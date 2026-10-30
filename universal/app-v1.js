@@ -64,7 +64,7 @@ function safariSummary(records){
  return out;
 }
 function safariComputeDays(records){
- const dates=new Set([safariTZDate(),...records.map(d=>d.date).filter(d=>/^\d{4}-\d{2}-\d{2}$/.test(d||""))]);
+ const dates=new Set(records.length?records.map(d=>d.date).filter(d=>/^\d{4}-\d{2}-\d{2}$/.test(d||"")):[safariTZDate()]);
  return [...dates].sort().map(date=>{
   const plan=SAFARI_DAYS.find(d=>d.date===date);
   const meetings=records.filter(o=>o.date===date);
