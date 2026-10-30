@@ -8,15 +8,161 @@
     return d.getFullYear()+"-"+p(d.getMonth()+1)+"-"+p(d.getDate());
   };
   var parks=[
-    {id:"tarangire",name:"Тарангире",country:"tanzania"},
-    {id:"serengeti",name:"Серенгети",country:"tanzania"},
-    {id:"ngorongoro",name:"Нгоронгоро",country:"tanzania"},
-    {id:"masai-mara",name:"Масаи-Мара",country:"kenya"},
-    {id:"amboseli",name:"Амбосели",country:"kenya"},
-    {id:"lake-nakuru",name:"Озеро Накуру",country:"kenya"},
-    {id:"samburu",name:"Самбуру",country:"kenya"},
-    {id:"tsavo-east",name:"Восточный Цаво",country:"kenya"},
-    {id:"tsavo-west",name:"Западный Цаво",country:"kenya"}
+    {
+      "id": "tarangire",
+      "name": "Тарангире",
+      "country": "tanzania",
+      "region": "Северный маршрут",
+      "hint": "Слоны и баобабы"
+    },
+    {
+      "id": "serengeti",
+      "name": "Серенгети",
+      "country": "tanzania",
+      "region": "Северный маршрут",
+      "hint": "Великая миграция и хищники"
+    },
+    {
+      "id": "ngorongoro",
+      "name": "Нгоронгоро",
+      "country": "tanzania",
+      "region": "Северный маршрут",
+      "hint": "Кратер и Большая пятёрка"
+    },
+    {
+      "id": "arusha",
+      "name": "Аруша",
+      "country": "tanzania",
+      "region": "Северный маршрут",
+      "hint": "Пешее сафари, жирафы и колобусы"
+    },
+    {
+      "id": "lake-manyara",
+      "name": "Озеро Маньяра",
+      "country": "tanzania",
+      "region": "Северный маршрут",
+      "hint": "Озеро, птицы и лес"
+    },
+    {
+      "id": "mkomazi",
+      "name": "Мкомази",
+      "country": "tanzania",
+      "region": "Северный маршрут",
+      "hint": "Сухая саванна и охрана носорогов"
+    },
+    {
+      "id": "kilimanjaro",
+      "name": "Килиманджаро",
+      "country": "tanzania",
+      "region": "Северный маршрут",
+      "hint": "Трекинг и горные маршруты"
+    },
+    {
+      "id": "ruaha",
+      "name": "Руаха",
+      "country": "tanzania",
+      "region": "Юг и восток",
+      "hint": "Большие хищники и антилопы"
+    },
+    {
+      "id": "nyerere",
+      "name": "Ньерере",
+      "country": "tanzania",
+      "region": "Юг и восток",
+      "hint": "Сафари на лодке по Руфиджи"
+    },
+    {
+      "id": "mikumi",
+      "name": "Микуми",
+      "country": "tanzania",
+      "region": "Юг и восток",
+      "hint": "Равнины и классическое сафари"
+    },
+    {
+      "id": "saadani",
+      "name": "Саадани",
+      "country": "tanzania",
+      "region": "Юг и восток",
+      "hint": "Саванна встречается с океаном"
+    },
+    {
+      "id": "udzungwa",
+      "name": "Горы Удзунгва",
+      "country": "tanzania",
+      "region": "Юг и восток",
+      "hint": "Леса, приматы и водопады"
+    },
+    {
+      "id": "kitulo",
+      "name": "Китуло",
+      "country": "tanzania",
+      "region": "Юг и восток",
+      "hint": "Горные луга и цветы"
+    },
+    {
+      "id": "katavi",
+      "name": "Катави",
+      "country": "tanzania",
+      "region": "Запад и озёра",
+      "hint": "Бегемоты, буйволы и дикая природа"
+    },
+    {
+      "id": "gombe",
+      "name": "Гомбе",
+      "country": "tanzania",
+      "region": "Запад и озёра",
+      "hint": "Пешее наблюдение за шимпанзе"
+    },
+    {
+      "id": "mahale",
+      "name": "Горы Махале",
+      "country": "tanzania",
+      "region": "Запад и озёра",
+      "hint": "Шимпанзе и озеро Танганьика"
+    },
+    {
+      "id": "rubondo-island",
+      "name": "Остров Рубондо",
+      "country": "tanzania",
+      "region": "Запад и озёра",
+      "hint": "Остров, леса, птицы и приматы"
+    },
+    {
+      "id": "masai-mara",
+      "name": "Масаи-Мара",
+      "country": "kenya",
+      "region": "Кения"
+    },
+    {
+      "id": "amboseli",
+      "name": "Амбосели",
+      "country": "kenya",
+      "region": "Кения"
+    },
+    {
+      "id": "lake-nakuru",
+      "name": "Озеро Накуру",
+      "country": "kenya",
+      "region": "Кения"
+    },
+    {
+      "id": "samburu",
+      "name": "Самбуру",
+      "country": "kenya",
+      "region": "Кения"
+    },
+    {
+      "id": "tsavo-east",
+      "name": "Восточный Цаво",
+      "country": "kenya",
+      "region": "Кения"
+    },
+    {
+      "id": "tsavo-west",
+      "name": "Западный Цаво",
+      "country": "kenya",
+      "region": "Кения"
+    }
   ];
   var defaultTrip=function(){
     return {id:"first",name:"Моё сафари",country:"tanzania",parks:["tarangire","serengeti","ngorongoro"],startDate:today(),endDate:today()};
