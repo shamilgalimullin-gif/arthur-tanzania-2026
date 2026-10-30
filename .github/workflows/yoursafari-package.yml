@@ -9,7 +9,7 @@ on:
       - '.github/workflows/yoursafari-package.yml'
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   prepare:
@@ -40,3 +40,15 @@ jobs:
           path: yoursafari-site.zip
           retention-days: 30
           if-no-files-found: error
+
+      - name: Publish a downloadable ZIP on GitHub Releases
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view yoursafari-beget >/dev/null 2>&1; then
+            gh release upload yoursafari-beget yoursafari-site.zip --clobber
+          else
+            gh release create yoursafari-beget yoursafari-site.zip \
+              --title "YourSafari — готовый сайт для Beget" \
+              --notes "Бета-версия YourSafari. Скачайте файл yoursafari-site.zip и распакуйте его содержимое в public_html домена yoursafari.ru. Архив не содержит личную версию дневника."
+          fi
