@@ -1,0 +1,42 @@
+name: Package YourSafari for Beget
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'universal/**'
+      - '.github/workflows/yoursafari-package.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout application files
+        uses: actions/checkout@v4
+      - name: Build independent public-domain site
+        run: python3 universal/build-yoursafari.py
+      - name: Validate bundle
+        run: |
+          python3 - <<'PY'
+          import zipfile,json
+          z=zipfile.ZipFile('yoursafari-site.zip')
+          names=z.namelist()
+          must=('index.html','app-v4.js','park-wildlife-v4.js','sw.js','manifest.webmanifest','animals/lion.jpg')
+          assert all(x in names for x in must), [x for x in must if x not in names]
+          assert json.loads(z.read('manifest.webmanifest'))['start_url']=='/'
+          assert b'/arthur-tanzania-2026/' not in z.read('app-v4.js')
+          assert b'/arthur-tanzania-2026/' not in z.read('sw.js')
+          assert b'/arthur-tanzania-2026/' not in z.read('index.html')
+          print('All static site checks OK,',len(names),'files')
+          PY
+      - name: Save download archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: yoursafari-site-ready-for-beget
+          path: yoursafari-site.zip
+          retention-days: 30
+          if-no-files-found: error
